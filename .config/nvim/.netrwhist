@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =9
+let g:netrw_dirhist_9='/home/prat/.config/polybar'
+let g:netrw_dirhist_8='/home/prat/.config/kitty'
+let g:netrw_dirhist_7='/home/prat/.config/nvim'
+let g:netrw_dirhist_6='/home/prat/.config'
+let g:netrw_dirhist_5='/home/prat/dotfiles/.config/nvim'
+let g:netrw_dirhist_4='/home/prat/.config/nvim'
+let g:netrw_dirhist_3='/home/prat/.config/polybar'
+let g:netrw_dirhist_2='/home/prat/.config/i3'
+let g:netrw_dirhist_1='/home/prat/.config/light'

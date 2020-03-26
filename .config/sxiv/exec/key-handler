@@ -1,0 +1,15 @@
+#!/bin/sh
+while read file
+do
+    case "$1" in
+    "w")
+      feh --bg-fill "$file" 
+      cp "$file" ~/.config/wall.png 
+      dunstify --icon="$file" "Wallpaper set" ;;
+    "d")
+      rm -rf "$file" ;;
+    "l")
+      betterlockscreen -u $file -r 1366x768 -b 0.5
+      dunstify --icon="$file" "Lockscreen set" ;;
+    esac
+done

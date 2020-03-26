@@ -1,0 +1,81 @@
+
+configuration {
+    display-drun:                   "Search";
+    display-window:                 "window";
+    show-icons:true;
+}
+ 
+* {
+    lines: 15;
+    columns: 1;
+    /* background-color: #2E3440; */
+    /* border-color: #81A1C1; */
+    /* text-color: #D8DEE9; */
+    font: "MesloLGSDZ Nerd Font 15";
+}
+ 
+#window {
+    border: 2px;
+    border-radius: 5px;
+    padding: 15px;
+    width: 50%;
+    height: 50%;
+}
+ 
+#mainbox {
+    background-color: @background-color;
+    children: [inputbar, listview];
+    spacing: 10px;
+    /*margin: 20%;*/
+    padding: 0 0 0 0;
+    border: 15px;
+    border-color: @background-color;
+}
+ 
+ 
+#listview {
+    background-color: @background-color;
+    fixed-height: 0;
+    border: 0px;
+    spacing: 10px;
+    scrollbar: false;
+    padding: 20px 0px 0px;
+}
+ 
+#element {
+    background-color: @background-color;
+    border: 0;
+    border-radius: 30px;
+    padding: 4 4 4 4 ;
+}
+ 
+#element selected {
+    background-color: @border-color;
+    text-color: @background-color;
+}
+ 
+ 
+#inputbar {
+    children:   [ prompt,textbox-prompt-colon,entry,case-indicator ];
+    background-color: @background-color;
+}
+ 
+#case-indicator {
+    background-color: @background-color;
+    spacing:    0;
+}
+#entry {
+    background-color: @background-color;
+    spacing:    0;
+}
+#prompt {
+    background-color: @background-color;
+    spacing:    0;
+}
+ 
+#textbox-prompt-colon {
+    background-color: @background-color;
+    expand:     false;
+    str:        " ⌁";
+    margin:     0px 0.3em 0em 0em ;
+}
