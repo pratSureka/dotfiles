@@ -1,5 +1,0 @@
-2020/03/28-18:20:59.959 b29 Reusing MANIFEST /home/prat/.config/vivaldi-snapshot/Default/IndexedDB/https_docs.google.com_0.indexeddb.leveldb/MANIFEST-000001
-2020/03/28-19:00:03.217 96c Level-0 table #5: started
-2020/03/28-19:00:03.229 96c Level-0 table #5: 727569 bytes OK
-2020/03/28-19:00:03.232 96c Delete type=0 #3
-2020/03/28-19:00:03.233 96c Manual compaction at level-0 from (begin) .. (end); will stop at (end)

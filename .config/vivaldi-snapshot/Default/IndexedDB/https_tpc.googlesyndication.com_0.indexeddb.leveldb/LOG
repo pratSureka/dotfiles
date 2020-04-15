@@ -1,8 +1,0 @@
-2020/04/05-12:01:41.959 19f9 Reusing MANIFEST /home/prat/.config/vivaldi-snapshot/Default/IndexedDB/https_tpc.googlesyndication.com_0.indexeddb.leveldb/MANIFEST-000001
-2020/04/05-12:01:41.960 19f9 Recovering log #14
-2020/04/05-12:01:41.960 19f9 Reusing old log /home/prat/.config/vivaldi-snapshot/Default/IndexedDB/https_tpc.googlesyndication.com_0.indexeddb.leveldb/000014.log 
-2020/04/05-12:01:52.730 1b78 Level-0 table #18: started
-2020/04/05-12:01:52.730 1b78 Level-0 table #18: 0 bytes OK
-2020/04/05-12:01:52.736 1b78 Delete type=0 #14
-2020/04/05-12:01:52.736 1b78 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
-2020/04/05-12:01:52.736 1b78 Manual compaction at level-1 from (begin) .. (end); will stop at (end)
