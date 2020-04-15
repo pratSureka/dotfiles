@@ -58,7 +58,7 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 2
 
-font-0 = SauceCodePro Nerd Font:pixelsize=9;1
+font-0 = Cousine Nerd Font:pixelsize=9;1
 
 modules-left = i3 bspwm
 modules-center =
@@ -209,9 +209,11 @@ label-connected = %essid%
 
 format-disconnected = <label-disconnected>
 format-disconnected-underline = ${self.format-connected-underline}
-label-disconnected = Wifi Disconnected
-format-disconnected-prefix = "睊 "
-label-disconnected-foreground = ${colors.foreground-alt}
+; label-disconnected = Wifi Disconnected
+label-disconnected =
+format-disconnected-prefix =
+; format-disconnected-prefix = "睊 "
+; label-disconnected-foreground = ${colors.foreground-alt}
 
 ramp-signal-0 = 
 ramp-signal-foreground = ${colors.foreground}
@@ -322,3 +324,4 @@ margin-top = 5
 margin-bottom = 5
 
 ; vim:ft=dosini
+

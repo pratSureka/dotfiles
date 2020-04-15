@@ -21,6 +21,8 @@ Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'tpope/vim-surround'
 Plug 'chrisbra/Colorizer'
 Plug 'lilydjwg/colorizer'
+Plug 'mboughaba/i3config.vim'
+Plug 'atahabaki/archman-vim'
 
 call plug#end()
 
@@ -32,8 +34,9 @@ set ignorecase
 set incsearch
 set lazyredraw
 set encoding=utf-8
-set expandtab
 set tabstop=4
+set shiftwidth=4
+set expandtab
 set linebreak
 set scrolloff=1
 let mapleader = " "
@@ -58,8 +61,8 @@ set undolevels=1000
 set undoreload=10000
 set undodir=~/.local/share/nvim
 set termguicolors
-colorscheme dracula
-au VimLeave * set guicursor=a:ver1-blinkon1
+colorscheme archman
+" au VimLeave * set guicursor=a:ver1-blinkon1
 
 "--Plugin-Config--"
 
@@ -73,7 +76,7 @@ let g:indentLine_enabled = 1
 
 "Lightline
 set noshowmode
-let g:lightline = { 'colorscheme': 'dracula' }
+" let g:lightline = { 'colorscheme': 'dracula' }
 
 "Completor
 let g:completor_python_binary = '/usr/lib/python3.8/'

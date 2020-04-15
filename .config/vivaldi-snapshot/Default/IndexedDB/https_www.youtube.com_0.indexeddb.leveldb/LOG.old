@@ -1,0 +1,8 @@
+2020/04/06-11:44:26.940 cea Reusing MANIFEST /home/prat/.config/vivaldi-snapshot/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/04/06-11:44:26.940 cea Recovering log #19
+2020/04/06-11:44:26.941 cea Reusing old log /home/prat/.config/vivaldi-snapshot/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000019.log 
+2020/04/06-12:44:56.733 1ba3 Level-0 table #24: started
+2020/04/06-12:44:56.733 1ba3 Level-0 table #24: 0 bytes OK
+2020/04/06-12:44:56.739 1ba3 Delete type=0 #19
+2020/04/06-12:44:56.739 1ba3 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2020/04/06-12:44:56.739 1ba3 Manual compaction at level-1 from (begin) .. (end); will stop at (end)

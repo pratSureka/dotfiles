@@ -1,0 +1,8 @@
+2020/04/04-23:06:00.989 7c76 Reusing MANIFEST /home/prat/.config/vivaldi-snapshot/Default/IndexedDB/http_notepad.pw_0.indexeddb.leveldb/MANIFEST-000001
+2020/04/04-23:06:00.989 7c76 Recovering log #4
+2020/04/04-23:06:00.990 7c76 Reusing old log /home/prat/.config/vivaldi-snapshot/Default/IndexedDB/http_notepad.pw_0.indexeddb.leveldb/000004.log 
+2020/04/04-23:06:14.514 1044 Level-0 table #8: started
+2020/04/04-23:06:14.515 1044 Level-0 table #8: 0 bytes OK
+2020/04/04-23:06:14.521 1044 Delete type=0 #4
+2020/04/04-23:06:14.521 1044 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2020/04/04-23:06:14.521 1044 Manual compaction at level-1 from (begin) .. (end); will stop at (end)

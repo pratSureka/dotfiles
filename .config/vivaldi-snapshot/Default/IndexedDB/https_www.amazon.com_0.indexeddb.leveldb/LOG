@@ -1,0 +1,5 @@
+2020/03/30-09:52:41.560 834 Reusing MANIFEST /home/prat/.config/vivaldi-snapshot/Default/IndexedDB/https_www.amazon.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/03/30-09:52:51.375 87c Level-0 table #5: started
+2020/03/30-09:52:51.381 87c Level-0 table #5: 1305 bytes OK
+2020/03/30-09:52:51.384 87c Delete type=0 #3
+2020/03/30-09:52:51.384 87c Manual compaction at level-0 from (begin) .. (end); will stop at (end)

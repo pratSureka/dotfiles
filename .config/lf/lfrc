@@ -20,7 +20,7 @@ map o &mimeopen $f
 map O $mimeopen --ask $f
 map r push :rename<space>
 map t trash
-map D delete
+map D delete $f
 map w
 map xu extract
 map xt $tar czf $f.tar.gz $f
@@ -48,12 +48,13 @@ cmd trash ${{
      [ $ans = "y" ] && mv $fx ~/.trash
 }}
 
-cmd delete ${{
-     printf "$fx\n"
-     printf "Delete?[y/n]"
-     read ans
-     [ $ans = "y" ] && rm -rf $fx
-}}
+# cmd delete ${{
+#      set -f
+#      printf "$fx\n"
+#      printf "Delete?[y/n]"
+#      read ans
+#      [ $ans = "y" ] && rm -rf $fx
+# }}
 
 cmd extract ${{
     set -f

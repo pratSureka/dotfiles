@@ -1,0 +1,37 @@
+2020/03/29-14:03:35.173 2f47 Reusing MANIFEST /home/prat/.config/vivaldi-snapshot/Default/IndexedDB/https_js.ad-score.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/03/29-14:03:35.173 2f47 Recovering log #18
+2020/03/29-14:03:35.173 2f47 Reusing old log /home/prat/.config/vivaldi-snapshot/Default/IndexedDB/https_js.ad-score.com_0.indexeddb.leveldb/000018.log 
+2020/03/29-14:03:35.280 279f Level-0 table #24: started
+2020/03/29-14:03:35.283 279f Level-0 table #24: 990 bytes OK
+2020/03/29-14:03:35.284 279f Delete type=0 #18
+2020/03/29-14:03:35.284 279f Manual compaction at level-0 from '\x00\x05\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x06\x00\x00\x00' @ 0 : 0; will stop at (end)
+2020/03/29-14:06:46.368 279f Level-0 table #26: started
+2020/03/29-14:06:46.371 279f Level-0 table #26: 516 bytes OK
+2020/03/29-14:06:46.374 279f Delete type=0 #23
+2020/03/29-14:06:46.374 279f Manual compaction at level-0 from '\x00\x06\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x07\x00\x00\x00' @ 0 : 0; will stop at '\x00\x06\x00\x00\x05' @ 238 : 1
+2020/03/29-14:06:46.374 279f Compacting 1@0 + 1@1 files
+2020/03/29-14:06:46.377 279f Generated table #27@0: 4 keys, 259 bytes
+2020/03/29-14:06:46.377 279f Compacted 1@0 + 1@1 files => 259 bytes
+2020/03/29-14:06:46.380 279f compacted to: files[ 0 1 1 0 0 0 0 ]
+2020/03/29-14:06:46.380 279f Delete type=2 #26
+2020/03/29-14:06:46.380 279f Manual compaction at level-0 from '\x00\x06\x00\x00\x05' @ 238 : 1 .. '\x00\x07\x00\x00\x00' @ 0 : 0; will stop at (end)
+2020/03/29-14:06:48.382 279f Level-0 table #29: started
+2020/03/29-14:06:48.389 279f Level-0 table #29: 218 bytes OK
+2020/03/29-14:06:48.390 279f Delete type=0 #25
+2020/03/29-14:06:48.390 279f Delete type=2 #24
+2020/03/29-14:06:48.391 279f Manual compaction at level-0 from (begin) .. (end); will stop at '\x00\x00\x00\x002\x02\x03\x01\x00\x00\x00\x00\x00\x00\x00\x00' @ 252 : 0
+2020/03/29-14:06:48.391 279f Compacting 1@0 + 1@1 files
+2020/03/29-14:06:48.393 279f Generated table #30@0: 2 keys, 196 bytes
+2020/03/29-14:06:48.393 279f Compacted 1@0 + 1@1 files => 196 bytes
+2020/03/29-14:06:48.396 279f compacted to: files[ 0 1 1 0 0 0 0 ]
+2020/03/29-14:06:48.397 279f Delete type=2 #27
+2020/03/29-14:06:48.397 279f Delete type=2 #29
+2020/03/29-14:06:48.397 279f Manual compaction at level-0 from '\x00\x00\x00\x002\x02\x03\x01\x00\x00\x00\x00\x00\x00\x00\x00' @ 252 : 0 .. (end); will stop at (end)
+2020/03/29-14:06:48.397 279f Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x00\x00\x00\x03' @ 247 : 0
+2020/03/29-14:06:48.397 279f Compacting 1@1 + 1@2 files
+2020/03/29-14:06:48.399 279f Generated table #31@1: 5 keys, 237 bytes
+2020/03/29-14:06:48.400 279f Compacted 1@1 + 1@2 files => 237 bytes
+2020/03/29-14:06:48.402 279f compacted to: files[ 0 0 1 0 0 0 0 ]
+2020/03/29-14:06:48.402 279f Delete type=2 #21
+2020/03/29-14:06:48.402 279f Delete type=2 #30
+2020/03/29-14:06:48.403 279f Manual compaction at level-1 from '\x00\x00\x00\x00\x03' @ 247 : 0 .. (end); will stop at (end)

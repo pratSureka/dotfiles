@@ -1,0 +1,15 @@
+2020/03/30-10:30:13.096 11bf Reusing MANIFEST /home/prat/.config/vivaldi-snapshot/Default/IndexedDB/https_keep.google.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/03/30-10:30:13.096 11bf Recovering log #7
+2020/03/30-10:30:13.096 11bf Reusing old log /home/prat/.config/vivaldi-snapshot/Default/IndexedDB/https_keep.google.com_0.indexeddb.leveldb/000007.log 
+2020/03/30-20:56:31.901 87c Level-0 table #11: started
+2020/03/30-20:56:31.904 87c Level-0 table #11: 190 bytes OK
+2020/03/30-20:56:31.907 87c Delete type=0 #7
+2020/03/30-20:56:31.908 87c Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2020/03/30-20:56:31.908 87c Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x00\x00\x00\x05' @ 164 : 1
+2020/03/30-20:56:31.908 87c Compacting 1@1 + 1@2 files
+2020/03/30-20:56:31.912 87c Generated table #12@1: 53 keys, 926 bytes
+2020/03/30-20:56:31.912 87c Compacted 1@1 + 1@2 files => 926 bytes
+2020/03/30-20:56:31.915 87c compacted to: files[ 0 0 1 0 0 0 0 ]
+2020/03/30-20:56:31.915 87c Delete type=2 #5
+2020/03/30-20:56:31.915 87c Delete type=2 #11
+2020/03/30-20:56:31.916 87c Manual compaction at level-1 from '\x00\x00\x00\x00\x05' @ 164 : 1 .. (end); will stop at (end)

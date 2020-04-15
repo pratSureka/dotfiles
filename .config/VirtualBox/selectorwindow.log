@@ -1,0 +1,19 @@
+00:00:04.052456 VirtualBox GUI VM Selector Window 6.1.4 r136177 linux.amd64 (Feb 20 2020 13:12:18) release log
+00:00:04.052458 Log opened 2020-04-06T17:56:33.771683000Z
+00:00:04.052459 Build Type: release
+00:00:04.052461 OS Product: Linux
+00:00:04.052462 OS Release: 5.5.10-artix1-1
+00:00:04.052463 OS Version: #1 SMP PREEMPT Wed, 18 Mar 2020 14:01:09 +0000
+00:00:04.052492 DMI Product Name: Inspiron 15-3567
+00:00:04.052499 DMI Product Version: 
+00:00:04.052503 Firmware type: UEFI
+00:00:04.052730 Secure Boot: Disabled
+00:00:04.052764 Host RAM: 7829MB (7.6GB) total, 7337MB (7.1GB) available
+00:00:04.052767 Executable: /usr/lib/virtualbox/VirtualBox
+00:00:04.052768 Process ID: 7098
+00:00:04.052768 Package type: LINUX_64BITS_GENERIC (OSE)
+00:00:04.052798 Qt version: 5.14.2
+00:00:04.069255 GUI: UIMediumEnumerator: Medium-enumeration started...
+00:00:04.380587 GUI: UIDesktopWidgetWatchdog::sltHandleHostScreenAvailableGeometryCalculated: Screen 0 work area is actually resized to: 30x63 x 664x675
+00:00:04.398884 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:02:16.785309 ERROR [COM]: aRC=NS_ERROR_UNEXPECTED (0x8000ffff) aIID={c0447716-ff5a-4795-b57a-ecd5fffa18a4} aComponent={SessionWrap} aText={The session is not locked (session state: Unlocked)}, preserve=false aResultDetail=0

@@ -1,0 +1,5 @@
+2020/03/27-21:34:34.332 aa6 Reusing MANIFEST /home/prat/.config/vivaldi-snapshot/Default/IndexedDB/https_googleads.g.doubleclick.net_0.indexeddb.leveldb/MANIFEST-000001
+2020/03/27-21:34:37.631 b8d Level-0 table #5: started
+2020/03/27-21:34:37.635 b8d Level-0 table #5: 364 bytes OK
+2020/03/27-21:34:37.640 b8d Delete type=0 #3
+2020/03/27-21:34:37.640 b8d Manual compaction at level-0 from (begin) .. (end); will stop at (end)

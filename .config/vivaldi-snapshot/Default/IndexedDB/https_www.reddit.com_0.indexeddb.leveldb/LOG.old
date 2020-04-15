@@ -1,0 +1,7 @@
+2020/03/29-14:32:46.345 3a84 Reusing MANIFEST /home/prat/.config/vivaldi-snapshot/Default/IndexedDB/https_www.reddit.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/03/29-14:32:46.345 3a84 Recovering log #3
+2020/03/29-14:32:46.346 3a84 Reusing old log /home/prat/.config/vivaldi-snapshot/Default/IndexedDB/https_www.reddit.com_0.indexeddb.leveldb/000003.log 
+2020/03/29-14:33:34.053 3b49 Level-0 table #5: started
+2020/03/29-14:33:34.060 3b49 Level-0 table #5: 2065 bytes OK
+2020/03/29-14:33:34.064 3b49 Delete type=0 #3
+2020/03/29-14:33:34.064 3b49 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

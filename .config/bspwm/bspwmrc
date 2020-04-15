@@ -1,5 +1,5 @@
 #! /bin/sh
-bspc monitor -d 1 2 3 4 5 6 7 8 9 10
+bspc monitor primary -d 1 2 3 4 5 6 7 8 9 10
 
 bspc config border_width         0
 bspc config window_gap          30
@@ -24,10 +24,7 @@ bspc rule -a Screenkey manage=off
 #bspc config presel_border_color "$color1"
 
 #--Autostart--#
-# wal -i ~/.config/wall.png -q -t -s &
-#wal -R
-xrdb ~/.Xdefaults
-xrdb ~/.Xresources
+xinput set-prop Synaptics\ TM3096-006 "libinput Tapping Enabled" 1
 pbar &
 xsetroot -cursor_name left_ptr &
 sxhkd -c ~/.config/bspwm/sxhkdrc &
@@ -35,11 +32,14 @@ xset b off
 feh --bg-fill ~/.config/wall.png
 setxkbmap -option caps:swapescape
 red &
-# picom &
 compton &
 unclutter &
 pkill dunst
 dunst &
-#mpd &
 nm-applet &
 blueman-applet &
+# pkill connman-gtk &
+# picom &
+# mpd &
+# xrdb ~/.Xdefaults
+# xrdb ~/.Xresources

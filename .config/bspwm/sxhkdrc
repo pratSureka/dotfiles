@@ -117,19 +117,20 @@ super + shift + w
 super + w 
       $BROWSER
 super + d 
-      rofi -show drun -config ~/.cache/wal/colors-rofi-dark.rasi -theme ~/.config/rofi/mytheme.rasi
+      dmenu_run
+      # rofi -show drun -config ~/.cache/wal/colors-rofi-dark.rasi -theme ~/.config/rofi/mytheme.rasi
 super + shift + d
-      rofi -show run
+      display
 super + n
       sxiv -tf ~/Pictures/Wallpapers
 Print
       scrot -z ~/Pictures/Screenshots/$(date '+%y%m%d-%H%M-%S').png
-super + x
-      rofi-power
+# super + x
+      # rofi-power
 super + c
 	rofi-config
-super + shift + s
-    rofi-scripts
+# super + shift + s
+    # rofi-scripts
 
 #Volume
 XF86Audio{RaiseVolume,LowerVolume,Mute}
@@ -141,7 +142,7 @@ XF86Audio{Play,Next,Prev,Stop}
 
 #light
 XF86MonBrightness{Down,Up}
-	sudo xbacklight -{dec,inc} 5
+	sudo light -{U,A} 5
 
 # make sxhkd reload its configuration files:
 super + Escape

@@ -5,19 +5,19 @@ super + {i,r,m}
 super + w 
       $BROWSER
 super + d 
-      rofi -show drun
-super + shift + d
-      rofi -show run
+      dmenu_run
 super + n
       sxiv -tf ~/Pictures/Wallpapers
 Print
       scrot -z ~/Pictures/Screenshots/$(date '+%y%m%d-%H%M-%S').png
 super + x
-      rofi-power
+      i3-msg exit
 
 #Volume
-XF86Audio{RaiseVolume,LowerVolume,Mute}
-      volc {3,2,1}
+XF86Audio{RaiseVolume,LowerVolume}
+      pulsemixer --change-volume {+5,-5}
+XF86AudioMute
+      pulsemixer --toggle-mute
 
 #Mpc
 XF86Audio{Play,Next,Prev,Stop}
@@ -25,10 +25,9 @@ XF86Audio{Play,Next,Prev,Stop}
 
 #light
 XF86MonBrightness{Down,Up}
-	light -{U,A} 5
+	sudo light -{U,A} 5
 #      xbacklight -{dec,inc} 5
 
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
-
