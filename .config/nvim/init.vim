@@ -23,6 +23,8 @@ Plug 'chrisbra/Colorizer'
 Plug 'lilydjwg/colorizer'
 Plug 'mboughaba/i3config.vim'
 Plug 'atahabaki/archman-vim'
+Plug 'arcticicestudio/nord-vim'
+Plug 'junegunn/fzf.vim'
 
 call plug#end()
 
@@ -61,7 +63,7 @@ set undolevels=1000
 set undoreload=10000
 set undodir=~/.local/share/nvim
 set termguicolors
-colorscheme archman
+colorscheme nord
 " au VimLeave * set guicursor=a:ver1-blinkon1
 
 "--Plugin-Config--"

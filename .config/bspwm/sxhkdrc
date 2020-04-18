@@ -2,9 +2,12 @@
 # bspwm hotkeys
 #
 
-# quit/restart bspwm
-super + shift + {x,r}
-	bspc {quit,wm -r}
+# restart bspwm
+super + shift + r
+	bspc wm -r
+#Clearine
+super + shift + x
+    clearine
 
 # kill
 super + q
@@ -14,6 +17,9 @@ super + q
 super + shift + q
 	bspc node -c
 
+#Edic configs
+super + c
+    edit-config
 # alternate between the tiled and monocle layout
 super + {t,f,shift + t,s}
 	bspc node -t {tiled,fullscreen,pseudo_tiled,floating}

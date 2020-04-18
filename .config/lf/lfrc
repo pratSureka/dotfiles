@@ -8,9 +8,23 @@ set drawbox true
 set wrapscroll true
 set period 10
 set color256 true
+set shell "/bin/bash"
 
 #--Freeing Default Keybindings--#
 map zh
+map <enter>
+map o
+map O
+map r
+map t
+map D
+map w
+map xu 
+map xt 
+map xz 
+map i 
+map m 
+map e 
 
 #--Key Bindings--#
 map <enter> $$SHELL
@@ -26,17 +40,18 @@ map xu extract
 map xt $tar czf $f.tar.gz $f
 map xz $zip -r $f.zip $f
 map . set hidden!
-map i &sxiv -ft `pwd`
+map i &sxiv -ft `pwd` & disown
 map m push $mkdir<space>
 map e $chmod +x $fx
 
 #--Custom functions--#
-cmd open ${{
-    case $(file --mime-type $f -b) in
-        text/*) $EDITOR $fx;;
-        *) for f in $fx; do setsid $OPENER $f > /dev/null 2> /dev/null & done;;
-    esac
-}}
+# cmd open ${{
+#     case $(file --mime-type "$f" -bL) in
+#         text/*|application/json) $EDITOR "$f";;
+#         video/*|image/*/application/pdf) xdg-open "$f" & disown;;
+#         *) xdg-open "$f" ;;
+#     esac
+# }}
 
 cmd rename %[ -e $1 ] && printf "file exists" || mv $f $1
 

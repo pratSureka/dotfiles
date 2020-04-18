@@ -38,7 +38,6 @@ pkill dunst
 dunst &
 nm-applet &
 blueman-applet &
-# pkill connman-gtk &
 # picom &
 # mpd &
 # xrdb ~/.Xdefaults

@@ -1,8 +1,10 @@
 sw_volume: 100
-audio_device_state:1:pulse audio
+audio_device_state:1:ALSA sound card
 audio_device_state:1:toggle_visualizer
-state: stop
-random: 0
+state: pause
+current: 139
+time: 20.296000
+random: 1
 repeat: 0
 single: 0
 consume: 0
@@ -10,4 +12,555 @@ crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
+0:3LAU feat. Bright Lights/How You Love Me/3LAU feat. Bright Lights-How You Love Me.mp3
+1:Adele/Skyfall/Adele-Skyfall.mp3
+2:Adele/25/Adele-Hello.mp3
+3:Adele/25/Adele-Send My Love (to Your New Lover).mp3
+4:Adele/25/Adele-When We Were Young.mp3
+5:Afrojack & Matthew Koma/Forget the World/Afrojack & Matthew Koma-Illuminate.mp3
+6:Afrojack & Matthew Koma/Forget the World/Afrojack & Matthew Koma-Keep Our Love Alive.mp3
+7:Afrojack & Steve Aoki feat. Miss Palmer/No Beef/Afrojack & Steve Aoki feat. Miss Palmer-No Beef.mp3
+8:Afrojack feat. Wiz Khalifa & Devin Cruise/Forget the World/Afrojack feat. Wiz Khalifa & Devin Cruise-Too Wild.mp3
+9:Afrojack feat. Wrabel/Forget the World/Afrojack feat. Wrabel-Ten Feet Tall.mp3
+10:Alan Walker/Force/Alan Walker-Force.mp3
+11:Alan Walker/Faded/Alan Walker-Faded.mp3
+12:Alan Walker/Sing Me to Sleep/Alan Walker-Sing Me to Sleep.mp3
+13:Alan Walker/Alone/Alan Walker-Alone.mp3
+14:Alan Walker/The Spectre/Alan Walker-The Spectre.mp3
+15:Alan Walker & Sophia Somajo/Diamond Heart/Alan Walker & Sophia Somajo-Diamond Heart.mp3
+16:Alan Walker, Noah Cyrus & Digital Farm Animals/All Falls Down/Alan Walker, Noah Cyrus & Digital Farm Animals-All Falls Down.mp3
+17:Alesso feat. Matthew Koma/Years/Alesso feat. Matthew Koma-Years (vocal extended mix).mp3
+18:Alesso feat. Tove Lo/Heroes (We Could Be)/Alesso feat. Tove Lo-Heroes (We Could Be).mp3
+19:Alesso vs. OneRepublic/If I Lose Myself/Alesso vs. OneRepublic-If I Lose Myself (Alesso vs OneRepublic).mp3
+20:Aljosha Konstanty/Stargaze ft. Joe/Aljosha Konstanty-Stargaze ft. Joe.mp3
+21:Ariana Grande/My Everything/Ariana Grande-One Last Time.mp3
+22:Ariana Grande/Dangerous Woman/Ariana Grande-Dangerous Woman.mp3
+23:Ariana Grande/no tears left to cry/Ariana Grande-no tears left to cry (instrumental).mp3
+24:Ariana Grande/Sweetener/Ariana Grande-God is a woman.mp3
+25:Ariana Grande feat. Nicki Minaj/Dangerous Woman/Ariana Grande feat. Nicki Minaj-Side to Side.mp3
+26:Armin van Buuren feat. Mr. Probz/Another You/Armin van Buuren feat. Mr. Probz-Another You (radio edit).mp3
+27:AronChupa Feat. Little Sis Nora/I'm an Albatraoz/AronChupa Feat. Little Sis Nora-I'm an Albatraoz.mp3
+28:Avicii/Levels/Avicii-Levels (original version).mp3
+29:Avicii/Levels (remixes)/Avicii-Levels (Skrillex remix).mp3
+30:Avicii/True/Avicii-Wake Me Up (Radio edit).mp3
+31:Avicii/Wake Me Up (Remixes)/Avicii-Wake Me Up (original extended mix).mp3
+32:Avicii & Nicky Romero/I Could Be the One (Remixes)/Avicii & Nicky Romero-I Could Be the One (Avicii vs Nicky Romero).mp3
+33:Avicii feat. Rita Ora/Avīci (01)/Avicii feat. Rita Ora-Lonely Together.mp3
+34:Avicii feat. Rita Ora/Lonely Together (Remixes)/Avicii feat. Rita Ora-Lonely Together (Alan Walker remix).mp3
+35:Avicii feat. Sandro Cavazza/Avīci (01)/Avicii feat. Sandro Cavazza-Without You.mp3
+36:Axwell Λ Ingrosso/Dreamer/Axwell Λ Ingrosso-Dreamer.mp3
+37:Axwell Λ Ingrosso/More Than You Know/Axwell Λ Ingrosso-More Than You Know.mp3
+38:Axwell Λ Ingrosso/More Than You Know/Axwell Λ Ingrosso-Sun Is Shining.mp3
+39:Bassjackers & KSHMR ft. Sidnie Tipton/Extreme/Bassjackers & KSHMR ft. Sidnie Tipton-Extreme.mp3
+40:Bassnectar feat. W. Darling/Noise vs. Beauty/Bassnectar feat. W. Darling-You & Me.mp3
+41:Bazzi feat. Camila Cabello/Beautiful/Bazzi feat. Camila Cabello-Beautiful.mp3
+42:Bebe Rexha/All Your Fault_ Pt. 1/Bebe Rexha-I Got You.mp3
+43:Bebe Rexha/Expectations/Bebe Rexha-Ferrari.mp3
+44:Bebe Rexha/Expectations/Bebe Rexha-I'm a Mess.mp3
+45:Bebe Rexha/Expectations/Bebe Rexha-Knees.mp3
+46:Bebe Rexha/Expectations/Bebe Rexha-Pillow.mp3
+47:Bebe Rexha feat. Florida Georgia Line/All Your Fault, Pt. 2/Bebe Rexha feat. Florida Georgia Line-Meant to Be.mp3
+48:Bebe Rexha feat. Nicki Minaj/No Broken Hearts/Bebe Rexha feat. Nicki Minaj-No Broken Hearts.mp3
+49:Bebe Rexha feat. Quavo/Expectations/Bebe Rexha feat. Quavo-2 Souls on Fire (1).mp3
+50:Bebe Rexha feat. Ty Dolla $ign/All Your Fault_ Pt. 1/Bebe Rexha feat. Ty Dolla $ign-Bad Bitch.mp3
+51:Blasterjaxx & Marnik/Heart Starts to Beat/Blasterjaxx & Marnik-Heart Starts to Beat.mp3
+52:Borgeous & Shaun Frank/This Could Be Love/Borgeous & Shaun Frank-This Could Be Love (Original Mix).mp3
+53:Breathe Carolina & Crossnaders feat. Karra/Sleepless/Breathe Carolina & Crossnaders feat. Karra-Vanish.mp3
+54:Breathe Carolina & Jay Cosmic feat. HALIENE/See The Sky/Breathe Carolina & Jay Cosmic feat. HALIENE-See The Sky.mp3
+55:Breathe Carolina vs Y&V/Hero (Satellite)/Breathe Carolina vs Y&V-Hero (Satellite).mp3
+56:Bruno Mars/Unorthodox Jukebox/Bruno Mars-When I Was Your Man.mp3
+57:Bruno Mars/24K Magic/Bruno Mars-24K Magic.mp3
+58:C-Ya/Believe/C-Ya-Believe (original mix).mp3
+59:Calvin Harris/Motion/Calvin Harris-Summer.mp3
+60:Calvin Harris & Alesso feat. Hurts/Under Control (extended mix)/Calvin Harris & Alesso feat. Hurts-Under Control (extended mix).mp3
+61:Calvin Harris + Disciples/How Deep Is Your Love (DJ Snake remix)/Calvin Harris + Disciples-How Deep Is Your Love (DJ Snake remix).mp3
+62:Calvin Harris feat. Ellie Goulding/Halcyon Days/Calvin Harris feat. Ellie Goulding-I Need Your Love.mp3
+63:Calvin Harris feat. Ellie Goulding/Motion/Calvin Harris feat. Ellie Goulding-Outside.mp3
+64:Calvin Harris feat. Florence Welch/Sweet Nothing/Calvin Harris feat. Florence Welch-Sweet Nothing.mp3
+65:Calvin Harris feat. John Newman/Motion/Calvin Harris feat. John Newman-Blame.mp3
+66:Calvin Harris feat. Rihanna/This Is What You Came For/Calvin Harris feat. Rihanna-This Is What You Came For.mp3
+67:Camila Cabello/Camila/Camila Cabello-Never Be the Same.mp3
+68:Camila Cabello/Camila/Camila Cabello-Real Friends.mp3
+69:Camila Cabello/Consequences (orchestra)/Camila Cabello-Consequences (orchestra).mp3
+70:Camila Cabello feat. Young Thug/Havana/Camila Cabello feat. Young Thug-Havana.mp3
+71:Cardi B/Invasion of Privacy/Cardi B-Bodak Yellow.mp3
+72:Cash Cash feat. Jacquie Lee/Blood, Sweat & 3 Years/Cash Cash feat. Jacquie Lee-Aftershock (1).mp3
+73:Cashmere Cat feat. Selena Gomez & Tory Lanez/Trust Nobody/Cashmere Cat feat. Selena Gomez & Tory Lanez-Trust Nobody.mp3
+74:Charlie Puth/Nine Track Mind/Charlie Puth-Dangerously.mp3
+75:Charlie Puth/Voicenotes/Charlie Puth-How Long.mp3
+76:Charlie Puth/Attention/Charlie Puth-Attention.mp3
+77:Charlie Puth feat. Meghan Trainor/Nine Track Mind/Charlie Puth feat. Meghan Trainor-Marvin Gaye.mp3
+78:Charlie Puth feat. Selena Gomez/Nine Track Mind/Charlie Puth feat. Selena Gomez-We Don't Talk Anymore.mp3
+79:Cheat Codes feat. Demi Lovato/No Promises/Cheat Codes feat. Demi Lovato-No Promises.mp3
+80:Clean Bandit feat. Demi Lovato/Solo (Latin remix)/Clean Bandit feat. Demi Lovato-Solo (Latin remix).mp3
+81:Clean Bandit feat. Julia Michaels/I Miss You/Clean Bandit feat. Julia Michaels-I Miss You (feat. Julia Michaels).mp3
+82:Clean Bandit feat. Sean Paul & Anne-Marie/Rockabye/Clean Bandit feat. Sean Paul & Anne-Marie-Rockabye.mp3
+83:Clean Bandit feat. Zara Larsson/Symphony/Clean Bandit feat. Zara Larsson-Symphony.mp3
+84:Coldplay/A Head Full of Dreams/Coldplay-Hymn for the Weekend.mp3
+85:DJ Khaled feat. Justin Bieber, Chance the Rapper & Quavo/No Brainer/DJ Khaled feat. Justin Bieber, Chance the Rapper & Quavo-No Brainer.mp3
+86:DJ Khaled feat. Justin Bieber, Quavo, Chance the Rapper & Lil Wayne/Grateful/DJ Khaled feat. Justin Bieber, Quavo, Chance the Rapper & Lil Wayne-I'm the One.mp3
+87:DJ Snake and Lil Jon/Turn Down for What/DJ Snake and Lil Jon-Turn Down for What.mp3
+88:DJ Snake feat. Bipolar Sunshine/Encore/DJ Snake feat. Bipolar Sunshine-Middle.mp3
+89:DJ Snake feat. Justin Bieber/Encore/DJ Snake feat. Justin Bieber-Let Me Love You.mp3
+90:DJ Snake feat. Selena Gomez, Ozuna & Cardi B/Taki Taki/DJ Snake feat. Selena Gomez, Ozuna & Cardi B-Taki Taki.mp3
+91:Dash Berlin & 3LAU feat. Bright Lights/We Are, Part 1/Dash Berlin & 3LAU feat. Bright Lights-Somehow.mp3
+92:David Guetta & Afrojack feat. Charli XCX & French Montana/Dirty Sexy Money/David Guetta & Afrojack feat. Charli XCX & French Montana-Dirty Sexy Money.mp3
+93:David Guetta & Showtek feat. Vassy/Bad/David Guetta & Showtek feat. Vassy-Bad.mp3
+94:David Guetta & Sia/7/David Guetta & Sia-Flames.mp3
+95:David Guetta & Sia/7/David Guetta & Sia-Light Headed.mp3
+96:David Guetta & Steve Aoki feat. Lil Uzi Vert, G-Eazy & Mally Mall/7/David Guetta & Steve Aoki feat. Lil Uzi Vert, G-Eazy & Mally Mall-Motto.mp3
+97:David Guetta feat. Madison Beer/7/David Guetta feat. Madison Beer-Blame It on Love.mp3
+98:David Guetta feat. Sam Martin/Listen/David Guetta feat. Sam Martin-Dangerous.mp3
+99:David Guetta feat. Sia/Nothing but the Beat 2.0/David Guetta feat. Sia-Titanium.mp3
+100:David Guetta feat. Sia/Nothing but the Beat 2.0/David Guetta feat. Sia-She Wolf (Falling to Pieces).mp3
+101:David Guetta feat. Zara Larsson/This One's for You/David Guetta feat. Zara Larsson-This One's for You.mp3
+102:David Guetta, Bebe Rexha & J Balvin/7/David Guetta, Bebe Rexha & J Balvin-Say My Name.mp3
+103:David Guetta, Martin Garrix & Brooks/Like I Do/David Guetta, Martin Garrix & Brooks-Like I Do.mp3
+104:Dean Lewis/Same Kind of Different/Dean Lewis-Waves.mp3
+105:Demi Lovato/Heart Attack/Demi Lovato-Heart Attack.mp3
+106:Demi Lovato/Confident/Demi Lovato-Confident.mp3
+107:Demi Lovato/Confident/Demi Lovato-Cool for the Summer.mp3
+108:Demi Lovato/Sorry Not Sorry/Demi Lovato-Sorry Not Sorry.mp3
+109:Demi Lovato/Sober/Demi Lovato-Sober.mp3
+110:Deorro/Five Hours/Deorro-Five Hours.mp3
+111:Dillon Francis & DJ Snake/Money Sucks, Friends Rule/Dillon Francis & DJ Snake-Get Low.mp3
+112:Dimitri Vegas & Like Mike & Gucci Mane/All I Need/Dimitri Vegas & Like Mike & Gucci Mane-All I Need.mp3
+113:Dimitri Vegas & Like Mike vs. David Guetta feat. Kiiara/Complicated/Dimitri Vegas & Like Mike vs. David Guetta feat. Kiiara-Complicated.mp3
+114:Dimitri Vegas, Martin Garrix & Like Mike/Gold Skies EP/Dimitri Vegas, Martin Garrix & Like Mike-Tremor.mp3
+115:Diplo feat. MØ & GoldLink/Get It Right (remix)/Diplo feat. MØ & GoldLink-Get It Right (remix).mp3
+116:Dr. Dre feat. Eminem & Skylar Grey/I Need a Doctor/Dr. Dre feat. Eminem & Skylar Grey-I Need a Doctor.mp3
+117:Drake/Views/Drake-Hotline Bling.mp3
+118:Dua Lipa/Dua Lipa (deluxe edition)/Dua Lipa-IDGAF.mp3
+119:Dua Lipa/Dua Lipa (deluxe edition)/Dua Lipa-New Rules.mp3
+120:Dyro and Conro feat. Envy Monroe/Bittersweet/Dyro and Conro feat. Envy Monroe-Bittersweet (Original Mix).mp3
+121:Ed Sheeran/÷/Ed Sheeran-Shape of You.mp3
+122:Ed Sheeran/÷/Ed Sheeran-Perfect.mp3
+123:Electrolight feat. Aloma Steele/NCS_ The Best of 2015/Electrolight feat. Aloma Steele-The Ways.mp3
+124:Elektronomia/Sky High/Elektronomia-Sky High.mp3
+125:Elephante feat. Rumors/I Want You/Elephante feat. Rumors-I Want You.mp3
+126:Ellie Goulding, Diplo & Swae Lee/Close to Me/Ellie Goulding, Diplo & Swae Lee-Close to Me.mp3
+127:Ember Island/Need You/Ember Island-Need You (Kazlo Remix).mp3
+128:Eminem/8 Mile/Eminem-Lose Yourself.mp3
+129:Eminem/Recovery/Eminem-Not Afraid.mp3
+130:Eminem/Recovery/Eminem-Space Bound.mp3
+131:Eminem/Rap God/Eminem-Rap God.mp3
+132:Eminem/The Marshall Mathers LP 2/Eminem-Berzerk.mp3
+133:Eminem/Kamikaze/Eminem-The Ringer.mp3
+134:Eminem/Kamikaze/Eminem-Greatest.mp3
+135:Eminem/Kamikaze/Eminem-Normal.mp3
+136:Eminem/Kamikaze/Eminem-Stepping Stone.mp3
+137:Eminem/Kamikaze/Eminem-Kamikaze.mp3
+138:Eminem/Kamikaze/Eminem-Fall.mp3
+139:Eminem/Kamikaze/Eminem-Venom (music from the motion picture).mp3
+140:Eminem feat. Beyoncé/Walk on Water/Eminem feat. Beyoncé-Walk on Water.mp3
+141:Eminem feat. Dido/The Marshall Mathers LP/Eminem feat. Dido-Stan.mp3
+142:Eminem feat. Ed Sheeran/Revival/Eminem feat. Ed Sheeran-River.mp3
+143:Eminem feat. Joyner Lucas/Kamikaze/Eminem feat. Joyner Lucas-Lucky You.mp3
+144:Eminem feat. Rihanna/The Marshall Mathers LP 2/Eminem feat. Rihanna-The Monster.mp3
+145:Eminem feat. Royce da 5'9_/Kamikaze/Eminem feat. Royce da 5'9_-Not Alike.mp3
+146:Empire of the Sun & Zedd/Clarity/Empire of the Sun & Zedd-Alive.mp3
+147:Enrique Iglesias/7/Enrique Iglesias-Adicto.mp3
+148:Enrique Iglesias/Sex and Love/Enrique Iglesias-Heart Attack.mp3
+149:Feint feat. Laura Brehm/We Won't Be Alone/Feint feat. Laura Brehm-We Won't Be Alone.mp3
+150:Flux Pavilion/Lines in Wax/Flux Pavilion-I Can't Stop.mp3
+151:Flux Pavilion & Matthew Koma/Tesla/Flux Pavilion & Matthew Koma-Emotional.mp3
+152:Fort Minor feat. Styles of Beyond/The Rising Tied/Fort Minor feat. Styles of Beyond-Remember the Name.mp3
+153:G-Eazy & Halsey/The Beautiful & Damned/G-Eazy & Halsey-Him & I.mp3
+154:G-Eazy & Kehlani/The Fate of the Furious_ The Album/G-Eazy & Kehlani-Good Life.mp3
+155:G-Eazy X Bebe Rexha/Me, Myself & I/G-Eazy X Bebe Rexha-Me, Myself & I.mp3
+156:Gareth Emery feat. Alex & Sierra/100 Reasons to Live/Gareth Emery feat. Alex & Sierra-We Were Young.mp3
+157:Gareth Emery feat. Gavrielle/100 Reasons to Live/Gareth Emery feat. Gavrielle-Far From Home.mp3
+158:Gareth Emery feat. Wayward Daughter/100 Reasons to Live/Gareth Emery feat. Wayward Daughter-Reckless.mp3
+159:Gary Clark Jr. & Junkie XL/Justice League (Original Motion Picture Soundtrack)/Gary Clark Jr. & Junkie XL-Come Together.mp3
+160:Green Day/American Idiot/Green Day-American Idiot.mp3
+161:Green Day/American Idiot/Green Day-Boulevard Of Broken Dreams.mp3
+162:Green Day/American Idiot/Green Day-Wake Me Up When September Ends.mp3
+163:Green Day/21st Century Breakdown/Green Day-21 Guns.mp3
+164:Gryffin & Illenium feat. Daya/Feel Good/Gryffin & Illenium feat. Daya-Feel Good.mp3
+165:Gryffin feat. Sinead Harnett/Love in Ruins/Gryffin feat. Sinead Harnett-Love in Ruins.mp3
+166:Hailee Steinfeld & Alesso feat. Florida Georgia Line & watt/Let Me Go/Hailee Steinfeld & Alesso feat. Florida Georgia Line & watt-Let Me Go.mp3
+167:Hailee Steinfeld & BloodPop®/Fifty Shades Freed_ The Final Chapter_ Original Motion Picture Soundtrack/Hailee Steinfeld & BloodPop®-Capital Letters.mp3
+168:Hailee Steinfeld & Grey feat. Zedd/Starving/Hailee Steinfeld & Grey feat. Zedd-Starving.mp3
+169:Halsey/Badlands/Halsey-Castle.mp3
+170:Halsey/Badlands/Halsey-Colors.mp3
+171:Halsey/Badlands/Halsey-Gasoline.mp3
+172:Halsey/hopeless fountain kingdom/Halsey-Alone.mp3
+173:Halsey/hopeless fountain kingdom/Halsey-Sorry.mp3
+174:Halsey/hopeless fountain kingdom/Halsey-Bad at Love (1).mp3
+175:Hardwell/Spaceman/Hardwell-Spaceman (1).mp3
+176:Hardwell/Spaceman/Hardwell-Spaceman.mp3
+177:Hardwell & Dyro feat. Bright Lights/I Am Hardwell/Hardwell & Dyro feat. Bright Lights-Never Say Goodbye.mp3
+178:Hardwell feat. Amba Shepherd/Apollo/Hardwell feat. Amba Shepherd-Apollo (original mix) (1).mp3
+179:Hardwell feat. Bright Lights/United We Are/Hardwell feat. Bright Lights-Let Me Be Your Home.mp3
+180:Hardwell feat. Chris Jones/United We Are/Hardwell feat. Chris Jones-Young Again.mp3
+181:Hardwell feat. Jake Reese/Mad World/Hardwell feat. Jake Reese-Mad World.mp3
+182:Hardwell feat. Jason Derulo/United We Are/Hardwell feat. Jason Derulo-Follow Me.mp3
+183:Hardwell with Joey Dale feat. Luciana/United We Are/Hardwell with Joey Dale feat. Luciana-Arcadia.mp3
+184:Hardwell with Tiësto feat. Andreas Moe/United We Are/Hardwell with Tiësto feat. Andreas Moe-Colors.mp3
+185:Hellberg feat. Cozi Zuehlsdorff/Monstercat 021 - Perspective/Hellberg feat. Cozi Zuehlsdorff-The Girl.mp3
+186:Hybrid Minds feat. Tiffani Juno/Touch/Hybrid Minds feat. Tiffani Juno-Touch.mp3
+187:Illenium/Awake/Illenium-No Time Like Now.mp3
+188:Illenium/Awake/Illenium-Where'd U Go.mp3
+189:Illenium/Awake/Illenium-Leaving.mp3
+190:Illenium/Awake/Illenium-Taking Me Higher.mp3
+191:Illenium & Kerli/Sound of Walking Away/Illenium & Kerli-Sound of Walking Away.mp3
+192:Illenium feat. Annika Wells/Awake/Illenium feat. Annika Wells-Crawl Outta Love.mp3
+193:Illenium feat. Dia Frampton/Awake/Illenium feat. Dia Frampton-Needed You.mp3
+194:Illenium feat. Echos/Ashes/Illenium feat. Echos-Afterlife.mp3
+195:Illenium feat. Ember Island/Awake/Illenium feat. Ember Island-Let You Go.mp3
+196:Illenium feat. Emilie Brandt/Awake/Illenium feat. Emilie Brandt-Lost.mp3
+197:Illenium feat. Joni Fatora/Ashes/Illenium feat. Joni Fatora-Fortress.mp3
+198:Illenium feat. Joni Fatora/Ashes/Illenium feat. Joni Fatora-Sleepwalker.mp3
+199:Illenium feat. King Deco/Ashes/Illenium feat. King Deco-Reverie.mp3
+200:Illenium feat. Max Schneider/Awake/Illenium feat. Max Schneider-Beautiful Creatures.mp3
+201:Illenium feat. Nevve/Fractures/Illenium feat. Nevve-Fractures.mp3
+202:Illenium feat. Runn/Awake/Illenium feat. Runn-Free Fall.mp3
+203:Illenium, Flume & Tove Lo/Say It ft. Tove Lo (Illenium Remix)/Illenium, Flume & Tove Lo-Say It ft. Tove Lo (Illenium Remix).mp3
+204:Imagine Dragons/Night Visions/Imagine Dragons-Radioactive.mp3
+205:Imagine Dragons/Night Visions/Imagine Dragons-Tiptoe.mp3
+206:Imagine Dragons/Night Visions/Imagine Dragons-It's Time.mp3
+207:Imagine Dragons/Night Visions/Imagine Dragons-Demons.mp3
+208:Imagine Dragons/Night Visions/Imagine Dragons-On Top of the World.mp3
+209:Imagine Dragons/Night Visions/Imagine Dragons-Amsterdam.mp3
+210:Imagine Dragons/Night Visions/Imagine Dragons-Every Night.mp3
+211:Imagine Dragons/Night Visions/Imagine Dragons-Bleeding Out.mp3
+212:Imagine Dragons/Battle Cry/Imagine Dragons-Battle Cry.mp3
+213:Imagine Dragons/Smoke + Mirrors/Imagine Dragons-Battle Cry.mp3
+214:Imagine Dragons/Believer/Imagine Dragons-Believer.mp3
+215:Imagine Dragons/Evolve/Imagine Dragons-I Don't Know Why.mp3
+216:Imagine Dragons/Evolve/Imagine Dragons-Whatever It Takes.mp3
+217:Imagine Dragons/Evolve/Imagine Dragons-Believer.mp3
+218:Imagine Dragons/Evolve/Imagine Dragons-Rise Up.mp3
+219:Imagine Dragons/Evolve/Imagine Dragons-I'll Make It Up to You.mp3
+220:Imagine Dragons/Evolve/Imagine Dragons-Thunder.mp3
+221:Imagine Dragons/Natural/Imagine Dragons-Natural.mp3
+222:Ivan Gough & Feenixpawl feat. Georgi Kay/In My Mind/Ivan Gough & Feenixpawl feat. Georgi Kay-In My Mind (Axwell mix).mp3
+223:J Balvin & Willy William/Mi gente/J Balvin & Willy William-Mi gente.mp3
+224:Jack Ü feat. Kai/Skrillex and Diplo Present Jack Ü/Jack Ü feat. Kai-Mind.mp3
+225:Jack Ü with Justin Bieber/Skrillex and Diplo Present Jack Ü/Jack Ü with Justin Bieber-Where Are Ü Now.mp3
+226:James Arthur/James Arthur/James Arthur-Impossible.mp3
+227:James Arthur/Back from the Edge/James Arthur-Back From the Edge (1).mp3
+228:James Arthur/Back from the Edge/James Arthur-Say You Won't Let Go.mp3
+229:James Arthur/Back from the Edge/James Arthur-Let Me Love the Lonely.mp3
+230:Jasleen Royal & Amit Trivedi/Dear Zindagi/Jasleen Royal & Amit Trivedi-Love You Zindagi.mp3
+231:Jason Derulo feat. Nicki Minaj & Ty Dolla $ign/Swalla/Jason Derulo feat. Nicki Minaj & Ty Dolla $ign-Swalla.mp3
+232:Jason Derulo x David Guetta feat. Nicki Minaj and Willy William/Goodbye/Jason Derulo x David Guetta feat. Nicki Minaj and Willy William-Goodbye.mp3
+233:JoeySuki & Kill The Buzz/Life Is Calling/JoeySuki & Kill The Buzz-Life Is Calling.mp3
+234:Jon Bellion/The Human Condition/Jon Bellion-All Time Low.mp3
+235:Justin Bieber/Purpose/Justin Bieber-What Do You Mean_ (1).mp3
+236:Justin Bieber/Purpose/Justin Bieber-What Do You Mean_.mp3
+237:Justin Bieber/Purpose/Justin Bieber-Sorry.mp3
+238:Justin Bieber + BloodPop®/Friends/Justin Bieber + BloodPop®-Friends.mp3
+239:KSHMR feat. Sidnie Tipton/Wildcard/KSHMR feat. Sidnie Tipton-Wildcard.mp3
+240:KSHMR feat. Sonu Nigam/Underwater/KSHMR feat. Sonu Nigam-Underwater.mp3
+241:Katy Perry/Teenage Dream/Katy Perry-Firework.mp3
+242:Katy Perry/Roar/Katy Perry-Roar.mp3
+243:Katy Perry/Rise/Katy Perry-Rise.mp3
+244:Katy Perry & Nicki Minaj/Witness/Katy Perry & Nicki Minaj-Swish Swish.mp3
+245:Kay Cee/Escape2/Kay Cee-Escape (radio edit).mp3
+246:Kendrick Lamar/DAMN_/Kendrick Lamar-DNA..mp3
+247:Kendrick Lamar/DAMN_/Kendrick Lamar-HUMBLE..mp3
+248:Kendrick Lamar/HUMBLE. (SKRILLEX REMIX)/Kendrick Lamar-HUMBLE. (SKRILLEX REMIX).mp3
+249:Kendrick Lamar & SZA/Black Panther_ The Album (music from and inspired by)/Kendrick Lamar & SZA-All the Stars.mp3
+250:Kendrick Lamar feat. Rihanna/DAMN_/Kendrick Lamar feat. Rihanna-LOYALTY..mp3
+251:Khalid/American Teen/Khalid-Young Dumb & Broke.mp3
+252:Khalid/Better/Khalid-Better.mp3
+253:Klaypex/Loose Dirt/Klaypex-Lights.mp3
+254:Krewella & Yellow Claw feat. Vava/New World/Krewella & Yellow Claw feat. Vava-New World.mp3
+255:Kygo & Imagine Dragons/Born to Be Yours/Kygo & Imagine Dragons-Born to Be Yours.mp3
+256:Kygo & Selena Gomez/It Ain't Me/Kygo & Selena Gomez-It Ain't Me.mp3
+257:Kygo feat. Conrad Sewell/Cloud Nine/Kygo feat. Conrad Sewell-Firestone.mp3
+258:Kygo feat. Julia Michaels/Cloud Nine/Kygo feat. Julia Michaels-Carry Me.mp3
+259:Kygo feat. Justin Jesso/Stargazing/Kygo feat. Justin Jesso-Stargazing.mp3
+260:Kygo feat. OneRepublic/Kids in Love/Kygo feat. OneRepublic-Stranger Things.mp3
+261:Kygo feat. Parson James/Cloud Nine/Kygo feat. Parson James-Stole the Show.mp3
+262:Kygo feat.Ellie Goulding/First Time/Kygo feat.Ellie Goulding-First Time.mp3
+263:Lady Gaga/Joanne/Lady Gaga-Perfect Illusion.mp3
+264:Led Zeppelin/[Led Zeppelin IV]/Led Zeppelin-Stairway to Heaven.mp3
+265:Lemaitre feat. Jennie A_/Closer/Lemaitre feat. Jennie A.-Closer.mp3
+266:Liam Payne & Rita Ora/Fifty Shades Freed_ The Final Chapter_ Original Motion Picture Soundtrack/Liam Payne & Rita Ora-For You (Fifty Shades Freed).mp3
+267:Lil Wayne, Wiz Khalifa & Imagine Dragons with Logic, Ty Dolla $ign & X Ambassadors/Suicide Squad_ The Album/Lil Wayne, Wiz Khalifa & Imagine Dragons with Logic, Ty Dolla $ign & X Ambassadors-Sucker for Pain.mp3
+268:Linkin Park/Hybrid Theory/Linkin Park-Crawling.mp3
+269:Linkin Park/Hybrid Theory/Linkin Park-By Myself.mp3
+270:Linkin Park/Hybrid Theory/Linkin Park-In the End.mp3
+271:Linkin Park/Hybrid Theory/Linkin Park-Pushing Me Away.mp3
+272:Linkin Park/Hybrid Theory/Linkin Park-High Voltage.mp3
+273:Linkin Park/Meteora/Linkin Park-Somewhere I Belong.mp3
+274:Linkin Park/Meteora/Linkin Park-Breaking the Habit.mp3
+275:Linkin Park/Meteora/Linkin Park-Numb.mp3
+276:Linkin Park/A Thousand Suns/Linkin Park-Wretches and Kings.mp3
+277:Linkin Park/A Thousand Suns/Linkin Park-Burning in the Skies.mp3
+278:Linkin Park/A Thousand Suns/Linkin Park-The Messenger.mp3
+279:Linkin Park/Transformers_ Dark of the Moon_ The Album/Linkin Park-Iridescent.mp3
+280:Linkin Park/Not Alone/Linkin Park-Not Alone.mp3
+281:Linkin Park/Living Things/Linkin Park-Lost in the Echo.mp3
+282:Linkin Park/Living Things/Linkin Park-Burn It Down.mp3
+283:Linkin Park/Living Things/Linkin Park-I'll Be Gone.mp3
+284:Linkin Park/Living Things/Linkin Park-Castle of Glass.mp3
+285:Linkin Park/Living Things/Linkin Park-Roads Untravelled.mp3
+286:Linkin Park/Living Things/Linkin Park-Powerless.mp3
+287:Linkin Park/Minutes to Midnight/Linkin Park-Wake.mp3
+288:Linkin Park/Minutes to Midnight/Linkin Park-Given Up.mp3
+289:Linkin Park/Minutes to Midnight/Linkin Park-Leave Out All the Rest.mp3
+290:Linkin Park/Minutes to Midnight/Linkin Park-Bleed It Out.mp3
+291:Linkin Park/Minutes to Midnight/Linkin Park-Shadow of the Day.mp3
+292:Linkin Park/Minutes to Midnight/Linkin Park-What I've Done.mp3
+293:Linkin Park/Minutes to Midnight/Linkin Park-Hands Held High.mp3
+294:Linkin Park/Minutes to Midnight/Linkin Park-No More Sorrow.mp3
+295:Linkin Park/Minutes to Midnight/Linkin Park-Valentine's Day.mp3
+296:Linkin Park/Minutes to Midnight/Linkin Park-In Between.mp3
+297:Linkin Park/Minutes to Midnight/Linkin Park-In Pieces.mp3
+298:Linkin Park/Minutes to Midnight/Linkin Park-The Little Things Give You Away.mp3
+299:Linkin Park/Minutes to Midnight/Linkin Park-No Roads Left.mp3
+300:Linkin Park/Minutes to Midnight/Linkin Park-Across the Line.mp3
+301:Linkin Park/The Hunting Party/Linkin Park-Keys to the Kingdom.mp3
+302:Linkin Park/The Hunting Party/Linkin Park-The Summoning.mp3
+303:Linkin Park/The Hunting Party/Linkin Park-Wastelands.mp3
+304:Linkin Park/The Hunting Party/Linkin Park-Until It's Gone.mp3
+305:Linkin Park/The Hunting Party/Linkin Park-Final Masquerade.mp3
+306:Linkin Park/The Hunting Party/Linkin Park-A Line in the Sand.mp3
+307:Linkin Park/One More Light/Linkin Park-Nobody Can Save Me.mp3
+308:Linkin Park/One More Light/Linkin Park-Talking to Myself.mp3
+309:Linkin Park/One More Light/Linkin Park-Battle Symphony (1).mp3
+310:Linkin Park/One More Light/Linkin Park-Invisible.mp3
+311:Linkin Park/One More Light/Linkin Park-Sorry for Now.mp3
+312:Linkin Park/One More Light/Linkin Park-Halfway Right.mp3
+313:Linkin Park/One More Light/Linkin Park-One More Light.mp3
+314:Linkin Park/One More Light/Linkin Park-Sharp Edges.mp3
+315:Linkin Park/One More Light (Chester Forever Steve Aoki remix)/Linkin Park-One More Light (Chester Forever Steve Aoki remix).mp3
+316:Linkin Park & Steve Aoki/Recharged/Linkin Park & Steve Aoki-A Light That Never Comes.mp3
+317:Linkin Park feat. Daron Malakian/The Hunting Party/Linkin Park feat. Daron Malakian-Rebellion.mp3
+318:Linkin Park feat. Kiiara/One More Light/Linkin Park feat. Kiiara-Heavy.mp3
+319:Linkin Park feat. Page Hamilton/The Hunting Party/Linkin Park feat. Page Hamilton-All for Nothing.mp3
+320:Linkin Park feat. Pusha T & Stormzy/One More Light/Linkin Park feat. Pusha T & Stormzy-Good Goodbye.mp3
+321:Linkin Park feat. Rakim/The Hunting Party/Linkin Park feat. Rakim-Guilty All the Same.mp3
+322:London Grammar/If You Wait/London Grammar-Hey Now.mp3
+323:Louis Tomlinson/Just Like You/Louis Tomlinson-Just Like You.mp3
+324:Louis Tomlinson/Miss You/Louis Tomlinson-Miss You.mp3
+325:Louis Tomlinson feat. Bebe Rexha & Digital Farm Animals/Back to You (Digital Farm Animals & Louis Tomlinson remix)/Louis Tomlinson feat. Bebe Rexha & Digital Farm Animals-Back to You (Digital Farm Animals & Louis Tomlinson remix).mp3
+326:Lukas Graham/Lukas Graham/Lukas Graham-7 Years (1).mp3
+327:MØ/Final Song/MØ-Final Song.mp3
+328:Machine Gun Kelly, X Ambassadors & Bebe Rexha/Bright_ The Album/Machine Gun Kelly, X Ambassadors & Bebe Rexha-Home.mp3
+329:Magnificence & Alec Maire feat. Brooke Forman/Heartbeat/Magnificence & Alec Maire feat. Brooke Forman-Heartbeat (Nicky Romero Edit).mp3
+330:Major Lazer feat. Justin Bieber & MØ/Cold Water/Major Lazer feat. Justin Bieber & MØ-Cold Water.mp3
+331:Major Lazer feat. Travis Scott, Camila Cabello & Quavo/Know No Better EP/Major Lazer feat. Travis Scott, Camila Cabello & Quavo-Know No Better.mp3
+332:Major Lazer x DJ Snake feat. MØ/Lean On/Major Lazer x DJ Snake feat. MØ-Lean On.mp3
+333:Mark Ronson feat. Bruno Mars/Uptown Special/Mark Ronson feat. Bruno Mars-Uptown Funk.mp3
+334:Maroon 5/Overexposed/Maroon 5-One More Night.mp3
+335:Maroon 5/V/Maroon 5-Animals.mp3
+336:Maroon 5/V/Maroon 5-Sugar.mp3
+337:Maroon 5 feat. Cardi B/Girls Like You/Maroon 5 feat. Cardi B-Girls Like You.mp3
+338:Maroon 5 feat. Christina Aguilera/Moves Like Jagger/Maroon 5 feat. Christina Aguilera-Moves Like Jagger.mp3
+339:Maroon 5 feat. Kendrick Lamar/Don't Wanna Know/Maroon 5 feat. Kendrick Lamar-Don't Wanna Know.mp3
+340:Maroon 5 feat. SZA/What Lovers Do/Maroon 5 feat. SZA-What Lovers Do.mp3
+341:Maroon 5 feat. Wiz Khalifa/Overexposed/Maroon 5 feat. Wiz Khalifa-Payphone.m4a
+342:Marshmello/Joytime/Marshmello-Summer.mp3
+343:Marshmello/Joytime/Marshmello-Find Me.mp3
+344:Marshmello/Alone/Marshmello-Alone.mp3
+345:Marshmello & Anne-Marie/Speak Your Mind/Marshmello & Anne-Marie-FRIENDS.mp3
+346:Marshmello & Bastille/Happier/Marshmello & Bastille-Happier.mp3
+347:Marshmello feat. Khalid/Silence/Marshmello feat. Khalid-Silence.mp3
+348:Marshmello feat. Omar LinX/Joytime/Marshmello feat. Omar LinX-Keep It Mello.mp3
+349:Martin Garrix/Gold Skies EP/Martin Garrix-Animals.mp3
+350:Martin Garrix/Forbidden Voices/Martin Garrix-Forbidden Voices.mp3
+351:Martin Garrix/Poison/Martin Garrix-Poison.mp3
+352:Martin Garrix/Pizza/Martin Garrix-Pizza.mp3
+353:Martin Garrix/BYLAW EP/Martin Garrix-Yottabyte.mp3
+354:Martin Garrix/BYLAW EP/Martin Garrix-Access.mp3
+355:Martin Garrix & Bebe Rexha/In the Name of Love/Martin Garrix & Bebe Rexha-In the Name of Love.mp3
+356:Martin Garrix & Blinders/BYLAW EP/Martin Garrix & Blinders-Breach (Walk Alone).mp3
+357:Martin Garrix & Brooks/Byte/Martin Garrix & Brooks-Byte.mp3
+358:Martin Garrix & David Guetta feat. Jamie Scott & Romy Dya/So Far Away/Martin Garrix & David Guetta feat. Jamie Scott & Romy Dya-So Far Away.mp3
+359:Martin Garrix & Dua Lipa/Scared to Be Lonely/Martin Garrix & Dua Lipa-Scared to Be Lonely.mp3
+360:Martin Garrix & Dyro/BYLAW EP/Martin Garrix & Dyro-Latency.mp3
+361:Martin Garrix & Jay Hardway/Gold Skies EP/Martin Garrix & Jay Hardway-Wizard.mp3
+362:Martin Garrix & Jay Hardway/Seven/Martin Garrix & Jay Hardway-Spotless.mp3
+363:Martin Garrix & Justin Mylo feat. Dewain Whitmore/Burn Out/Martin Garrix & Justin Mylo feat. Dewain Whitmore-Burn Out.mp3
+364:Martin Garrix & LOOPERS/Game Over/Martin Garrix & LOOPERS-Game Over.mp3
+365:Martin Garrix & MOTi/Virus (How About Now)/Martin Garrix & MOTi-Virus (How About Now).mp3
+366:Martin Garrix & Matisse & Sadko/Seven/Martin Garrix & Matisse & Sadko-Together.mp3
+367:Martin Garrix & Matisse & Sadko/Forever/Martin Garrix & Matisse & Sadko-Forever.mp3
+368:Martin Garrix & Pierce Fulton feat. Mike Shinoda/BYLAW EP/Martin Garrix & Pierce Fulton feat. Mike Shinoda-Waiting for Tomorrow.mp3
+369:Martin Garrix & Troye Sivan/There for You/Martin Garrix & Troye Sivan-There for You.mp3
+370:Martin Garrix feat. Bonn/High on Life/Martin Garrix feat. Bonn-High on Life.mp3
+371:Martin Garrix feat. Khalid/Ocean/Martin Garrix feat. Khalid-Ocean.mp3
+372:Martin Garrix feat. MESTO/Seven/Martin Garrix feat. MESTO-WIEE.mp3
+373:Martin Garrix feat. The Federal Empire/Seven/Martin Garrix feat. The Federal Empire-Hold on & Believe.mp3
+374:Martin Garrix feat. Usher/Don't Look Down/Martin Garrix feat. Usher-Don't Look Down.mp3
+375:Martin Garrix vs Matisse & Sadko/Break Through the Silence/Martin Garrix vs Matisse & Sadko-Break Through the Silence.mp3
+376:Matt Nash/Revealed Recordings presents Miami Sampler 2015/Matt Nash-Nothing Else Matters.mp3
+377:Matt Nash, Dave Silcox & Tom Peppe/Hardwell presents Revealed, Vol. 4/Matt Nash, Dave Silcox & Tom Peppe-Hearts.mp3
+378:Meghan Trainor/Title (Special Edition)/Meghan Trainor-All About That Bass.mp3
+379:Mike Posner/At Night, Alone_/Mike Posner-I Took a Pill in Ibiza (SeeB remix).mp3
+380:Mike Shinoda feat. grandson/Post Traumatic/Mike Shinoda feat. grandson-Running from My Shadow.mp3
+381:Miley Cyrus/Bangerz/Miley Cyrus-Wrecking Ball.mp3
+382:Muzzy feat. KG & Skyelle/Monstercat 025 - Threshold/Muzzy feat. KG & Skyelle-Calling Out.mp3
+383:Nicky Romero & NERVO/Like Home/Nicky Romero & NERVO-Like Home (Original mix).mp3
+384:Nicky Romero & Vicetone feat. When We Are Wild/Let Me Feel/Nicky Romero & Vicetone feat. When We Are Wild-Let Me Feel (Original Mix) (1).mp3
+385:Nicky Romero & Vicetone feat. When We Are Wild/Let Me Feel/Nicky Romero & Vicetone feat. When We Are Wild-Let Me Feel (Original Mix).mp3
+386:Nicky Romero vs. Volt & State/Warriors/Nicky Romero vs. Volt & State-Warriors (Original Mix).mp3
+387:One Direction/Made in the A.M_/One Direction-Hey Angel.mp3
+388:One Direction/Made in the A.M_/One Direction-Drag Me Down (1).mp3
+389:One Direction/Made in the A.M_/One Direction-Drag Me Down.mp3
+390:One Direction/Made in the A.M_/One Direction-Perfect.mp3
+391:One Direction/Made in the A.M_/One Direction-Infinity (1).mp3
+392:One Direction/Made in the A.M_/One Direction-Infinity.mp3
+393:One Direction/Made in the A.M_/One Direction-History (1).mp3
+394:One Direction/Made in the A.M_/One Direction-History.mp3
+395:OneRepublic/Native/OneRepublic-Counting Stars.mp3
+396:Owl City/Ocean Eyes/Owl City-Cave In.mp3
+397:Owl City/Ocean Eyes/Owl City-The Bird and the Worm.mp3
+398:Owl City/Ocean Eyes/Owl City-Umbrella Beach.mp3
+399:Owl City/Ocean Eyes/Owl City-The Saltwater Room.mp3
+400:Owl City/Ocean Eyes/Owl City-Dental Care.mp3
+401:Owl City/Ocean Eyes/Owl City-Meteor Shower.mp3
+402:Owl City/Ocean Eyes/Owl City-On the Wing.mp3
+403:Owl City/Ocean Eyes/Owl City-Fireflies.mp3
+404:Owl City/Ocean Eyes/Owl City-The Tip of the Iceberg.mp3
+405:Owl City/Ocean Eyes/Owl City-Tidal Wave.mp3
+406:Owl City/Ocean Eyes/Owl City-Hot Air Balloon.mp3
+407:Owl City/Ocean Eyes/Owl City-Butterfly Wings.mp3
+408:Owl City/Ocean Eyes/Owl City-Sunburn.mp3
+409:Owl City/Ocean Eyes/Owl City-Hello Seattle (remix).mp3
+410:Owl City/Ocean Eyes/Owl City-If My Heart Was a House.mp3
+411:Owl City/Ocean Eyes/Owl City-Strawberry Avalanche.mp3
+412:Owl City/The Midsummer Station/Owl City-Dreams and Disasters.mp3
+413:Owl City/The Midsummer Station/Owl City-Shooting Star.mp3
+414:Owl City/The Midsummer Station/Owl City-Gold.mp3
+415:Owl City/The Midsummer Station/Owl City-Speed of Love.mp3
+416:Owl City/The Midsummer Station/Owl City-Embers.mp3
+417:Owl City/The Midsummer Station/Owl City-Bombshell Blonde.mp3
+418:Owl City & Carly Rae Jepsen/The Midsummer Station/Owl City & Carly Rae Jepsen-Good Time.mp3
+419:Owl City feat. Aloe Blacc/Verge/Owl City feat. Aloe Blacc-Verge.mp3
+420:Paris Blohm & Taylr Renee/Hardwell Presents Revealed, Volume 5/Paris Blohm & Taylr Renee-Left Behinds (original mix).mp3
+421:Post Malone/beerbongs & bentleys/Post Malone-Better Now.mp3
+422:Post Malone feat. 21 Savage/rockstar/Post Malone feat. 21 Savage-rockstar.mp3
+423:Post Malone ft. Ty Dolla $ign/beerbongs & bentleys/Post Malone ft. Ty Dolla $ign-Psycho.mp3
+424:R3hab/Icarus (Remixes)/R3hab-Icarus (R3hab & Skytech remix).mp3
+425:R3hab & Felix Snow ft. Madi/Care/R3hab & Felix Snow ft. Madi-Care.mp3
+426:Rae Sremmurd feat. Gucci Mane/SremmLife 2/Rae Sremmurd feat. Gucci Mane-Black Beatles.mp3
+427:Rain Man feat. OLY/Bring Back the Summer/Rain Man feat. OLY-Bring Back the Summer.mp3
+428:Rihanna feat. Drake/ANTI/Rihanna feat. Drake-Work.mp3
+429:Rihanna feat. Eminem/Loud/Rihanna feat. Eminem-Love the Way You Lie (Part II).mp3
+430:Rita Ora feat. Cardi B, Bebe Rexha & Charli XCX/Girls/Rita Ora feat. Cardi B, Bebe Rexha & Charli XCX-Girls.mp3
+431:Roniit/Through the Night/Roniit-Through the Night.mp3
+432:SMLE feat. Helen Tess/Halo/SMLE feat. Helen Tess-Halo.mp3
+433:Sam Smith/Too Good at Goodbyes/Sam Smith-Too Good at Goodbyes.mp3
+434:Sean Paul feat. Dua Lipa/No Lie/Sean Paul feat. Dua Lipa-No Lie.mp3
+435:Sebastian Ingrosso & Alesso feat. Ryan Tedder/Calling (Lose My Mind)/Sebastian Ingrosso & Alesso feat. Ryan Tedder-Calling (Lose My Mind) (radio edit).mp3
+436:Selena Gomez/Stars Dance/Selena Gomez-Come & Get It.mp3
+437:Selena Gomez/Revival/Selena Gomez-Kill Em With Kindness.mp3
+438:Selena Gomez/Revival/Selena Gomez-Hands to Myself.mp3
+439:Selena Gomez/Revival/Selena Gomez-Same Old Love.mp3
+440:Selena Gomez/Revival/Selena Gomez-Sober.mp3
+441:Selena Gomez/Revival/Selena Gomez-Perfect.mp3
+442:Selena Gomez/13 Reasons Why (A Netflix Original Series Score)/Selena Gomez-Only You.mp3
+443:Selena Gomez/13 Reasons Why, Season 2_ A Netflix Original Series Soundtrack/Selena Gomez-Back to You.mp3
+444:Selena Gomez × Marshmello/Wolves/Selena Gomez × Marshmello-Wolves.mp3
+445:Selena Gomez & The Scene/For You/Selena Gomez & The Scene-My Dilemma 2.0.mp3
+446:Selena Gomez feat. A$AP Rocky/Revival/Selena Gomez feat. A$AP Rocky-Good for You.mp3
+447:Selena Gomez feat. Gucci Mane/Fetish/Selena Gomez feat. Gucci Mane-Fetish.mp3
+448:Seven Lions feat. Ellie Goulding/Worlds Apart/Seven Lions feat. Ellie Goulding-Don't Leave.mp3
+449:Seven Lions feat. Fiora/Seven Lions/Seven Lions feat. Fiora-Days to Come.mp3
+450:Seven Lions feat. Kerli/Worlds Apart/Seven Lions feat. Kerli-Worlds Apart.mp3
+451:Seven Lions, Illenium & Said the Sky feat. HALIENE/Rush Over Me/Seven Lions, Illenium & Said the Sky feat. HALIENE-Rush Over Me.mp3
+452:Shawn Mendes/Illuminate/Shawn Mendes-There's Nothing Holdin' Me Back.mp3
+453:Shawn Mendes/Illuminate/Shawn Mendes-Mercy.mp3
+454:Shawn Mendes/Illuminate/Shawn Mendes-Treat You Better.mp3
+455:Shawn Mendes/Illuminate/Shawn Mendes-No Promises.mp3
+456:Shawn Mendes/In My Blood/Shawn Mendes-In My Blood.mp3
+457:Shawn Mendes/Lost in Japan/Shawn Mendes-Lost in Japan.mp3
+458:Shawn Mendes & Zedd/Lost in Japan (remix)/Shawn Mendes & Zedd-Lost in Japan (remix).mp3
+459:Shawn Mendes feat. Khalid/Shawn Mendes/Shawn Mendes feat. Khalid-Youth.mp3
+460:Sia/1000 Forms of Fear/Sia-Chandelier.mp3
+461:Sia/This Is Acting/Sia-Move Your Body.mp3
+462:Sia/This Is Acting/Sia-Cheap Thrills.mp3
+463:Silk City & Dua Lipa/Electricity/Silk City & Dua Lipa-Electricity.mp3
+464:Skillet/Awake (Deluxe)/Skillet-Hero.mp3
+465:Skillet/Awake (Deluxe)/Skillet-Monster.mp3
+466:Skillet/Awake (Deluxe)/Skillet-Awake and Alive.mp3
+467:Skillet/Rise/Skillet-Rise.mp3
+468:Skrillex/Scary Monsters and Nice Sprites/Skrillex-Scary Monsters and Nice Sprites (original).mp3
+469:Skrillex/More Monsters and Sprites/Skrillex-First of the Year (Equinox).mp3
+470:Skrillex & The Doors/Bangarang/Skrillex & The Doors-Breakn' a Sweat.mp3
+471:Skrillex feat. Ellie Goulding/Bangarang/Skrillex feat. Ellie Goulding-Summit.mp3
+472:Skrillex feat. Sirah/Bangarang/Skrillex feat. Sirah-Bangarang (1).mp3
+473:Stadiumx & Taylr Renee/Howl At The Moon/Stadiumx & Taylr Renee-Howl At The Moon (Original Mix).mp3
+474:Stat Quo/Eminem Presents The Re-Up/Stat Quo-Get Low.mp3
+475:Steve Aoki & Lauren Jauregui/All Night/Steve Aoki & Lauren Jauregui-All Night.mp3
+476:Steve Aoki & Louis Tomlinson/Just Hold On/Steve Aoki & Louis Tomlinson-Just Hold On.mp3
+477:Steve Aoki & Nicky Romero feat. Kiiara/Be Somebody/Steve Aoki & Nicky Romero feat. Kiiara-Be Somebody.mp3
+478:Swedish House Mafia/Ministry of Sound_ The Annual 2013/Swedish House Mafia-Don't You Worry Child.mp3
+479:Take That/Progressed/Take That-When We Were Young.mp3
+480:Taylor Swift/1989/Taylor Swift-Shake It Off.mp3
+481:Taylor Swift/1989/Taylor Swift-This Love.mp3
+482:Taylor Swift/1989/Taylor Swift-I Know Places.mp3
+483:Taylor Swift/reputation/Taylor Swift-I Did Something Bad.mp3
+484:Taylor Swift/reputation/Taylor Swift-Don't Blame Me.mp3
+485:Taylor Swift/reputation/Taylor Swift-Delicate.mp3
+486:Taylor Swift/reputation/Taylor Swift-Look What You Made Me Do.mp3
+487:Taylor Swift/reputation/Taylor Swift-Gorgeous.mp3
+488:Taylor Swift/reputation/Taylor Swift-King of My Heart.mp3
+489:Taylor Swift/reputation/Taylor Swift-This Is Why We Can't Have Nice Things.mp3
+490:Taylor Swift/reputation/Taylor Swift-Call It What You Want.mp3
+491:Taylor Swift/reputation/Taylor Swift-... Ready for It_.mp3
+492:Taylor Swift feat. Ed Sheeran & Future/reputation/Taylor Swift feat. Ed Sheeran & Future-End Game.mp3
+493:The Chainsmokers/#SELFIE/The Chainsmokers-#SELFIE.mp3
+494:The Chainsmokers/Paris/The Chainsmokers-Paris.mp3
+495:The Chainsmokers/Everybody Hates Me/The Chainsmokers-Everybody Hates Me.mp3
+496:The Chainsmokers/Sick Boy/The Chainsmokers-Sick Boy.mp3
+497:The Chainsmokers & Coldplay/Something Just Like This/The Chainsmokers & Coldplay-Something Just Like This.mp3
+498:The Chainsmokers & Drew Love/Somebody/The Chainsmokers & Drew Love-Somebody.mp3
+499:The Chainsmokers feat. Charlee/Inside Out/The Chainsmokers feat. Charlee-Inside Out.mp3
+500:The Chainsmokers feat. Daya/Don't Let Me Down/The Chainsmokers feat. Daya-Don't Let Me Down.mp3
+501:The Chainsmokers feat. Daya/Don't Let Me Down [Remixes]/The Chainsmokers feat. Daya-Don't Let Me Down [Illenium Remix].mp3
+502:The Chainsmokers feat. Halsey/Closer/The Chainsmokers feat. Halsey-Closer.mp3
+503:The Chainsmokers feat. Kelsea Ballerini/Sick Boy...This Feeling/The Chainsmokers feat. Kelsea Ballerini-This Feeling.mp3
+504:The Chainsmokers feat. Phoebe Ryan/All We Know/The Chainsmokers feat. Phoebe Ryan-All We Know.mp3
+505:The Chainsmokers feat. Rozes/Roses/The Chainsmokers feat. Rozes-Roses.mp3
+506:The Chainsmokers feat. XYLØ/Collage/The Chainsmokers feat. XYLØ-Setting Fires.mp3
+507:The Script/No Sound Without Silence/The Script-Superheroes.mp3
+508:The Script feat. will.i.am/#3/The Script feat. will.i.am-Hall of Fame.mp3
+509:The Weeknd/Beauty Behind the Madness/The Weeknd-The Hills.mp3
+510:The Weeknd/Beauty Behind the Madness/The Weeknd-Can't Feel My Face.mp3
+511:The Weeknd/Can't Feel My Face (Martin Garrix remix)/The Weeknd-Can't Feel My Face (Martin Garrix remix).mp3
+512:The Weeknd/My Dear Melancholy,/The Weeknd-Call Out My Name.mp3
+513:The Weeknd & Kendrick Lamar/Black Panther_ The Album (music from and inspired by)/The Weeknd & Kendrick Lamar-Pray for Me.mp3
+514:The Weeknd feat. Daft Punk/Starboy/The Weeknd feat. Daft Punk-Starboy.mp3
+515:The Weeknd feat. Daft Punk/Starboy/The Weeknd feat. Daft Punk-I Feel It Coming.mp3
+516:TheFatRat feat. Laura Brehm/The Calling/TheFatRat feat. Laura Brehm-The Calling.mp3
+517:Tiësto/A Town Called Paradise/Tiësto-Red Lights.mp3
+518:Tiësto & KSHMR feat. Vassy/Secrets/Tiësto & KSHMR feat. Vassy-Secrets.mp3
+519:Tiësto & The Chainsmokers/Split (Only U) Original Mix/Tiësto & The Chainsmokers-Split (Only U).mp3
+520:Tom Swoon & Paris & Simo/Wait/Tom Swoon & Paris & Simo-Wait.mp3
+521:Vicetone feat. Cozi Zuehlsdorff/Nevada/Vicetone feat. Cozi Zuehlsdorff-Nevada.mp3
+522:Wiz Khalifa feat. Charlie Puth/Furious 7_ Original Motion Picture Soundtrack/Wiz Khalifa feat. Charlie Puth-See You Again.mp3
+523:Yellow Claw feat. Rochelle/Shotgun/Yellow Claw feat. Rochelle-Shotgun.mp3
+524:Yellow Claw ft Juicy J & Lil Debbie/Los Amsterdam/Yellow Claw ft Juicy J & Lil Debbie-City on Lockdown.mp3
+525:ZAYN/PILLOWTALK/ZAYN-PILLOWTALK.mp3
+526:ZAYN/Let Me/ZAYN-Let Me.mp3
+527:ZAYN feat. Sia/Dusk Till Dawn/ZAYN feat. Sia-Dusk Till Dawn.mp3
+528:ZAYN _ Taylor Swift/I Don't Wanna Live Forever (Fifty Shades Darker)/ZAYN _ Taylor Swift-I Don't Wanna Live Forever (Fifty Shades Darker).mp3
+529:Zedd & Alessia Cara/Stay/Zedd & Alessia Cara-Stay.mp3
+530:Zedd & Liam Payne/Get Low/Zedd & Liam Payne-Get Low.mp3
+531:Zedd feat. Elley Duhé/Happy Now/Zedd feat. Elley Duhé-Happy Now.mp3
+532:Zedd feat. Foxes/Clarity/Zedd feat. Foxes-Clarity.mp3
+533:Zedd feat. Hayley Williams of Paramore/Clarity/Zedd feat. Hayley Williams of Paramore-Stay the Night.mp3
+534:Zedd feat. Hayley Williams of Paramore & Kevin Drew/Stay The Night (Zedd & Kevin Drew Remix)/Zedd feat. Hayley Williams of Paramore & Kevin Drew-Stay The Night (Zedd & Kevin Drew Remix).mp3
+535:Zedd feat. Jon Bellion/True Colors/Zedd feat. Jon Bellion-Beautiful Now.mp3
+536:Zedd feat. Matthew Koma/Clarity/Zedd feat. Matthew Koma-Spectrum.mp3
+537:Zedd feat. Matthew Koma & Miriam Bryant/Find You/Zedd feat. Matthew Koma & Miriam Bryant-Find You.mp3
+538:Zedd feat. Selena Gomez/True Colors/Zedd feat. Selena Gomez-I Want You to Know.mp3
+539:Zedd, Maren Morris & Grey/The Middle/Zedd, Maren Morris & Grey-The Middle.mp3
+540:Zomboy/The Dead Symphonic EP/Zomboy-Nuclear (Hands Up).mp3
+541:deadmau5 & Kaskade/5 years of mau5/deadmau5 & Kaskade-I Remember (vocal mix).mp3
+542:nulabee feat. Holly Drummond/Treefall Gaps/nulabee feat. Holly Drummond-Breathe.mp3
+543:twenty one pilots/Suicide Squad_ The Album/twenty one pilots-Heathens.mp3
+544:twenty one pilots/Blurryface/twenty one pilots-Stressed Out.mp3
+545:twenty one pilots/Suicide Squad_ The Album/twenty one pilots-Heathens.mp3
+546:twenty one pilots/Blurryface/twenty one pilots-Stressed Out.mp3
+547:twenty one pilots/Suicide Squad_ The Album/twenty one pilots-Heathens.mp3
+548:twenty one pilots/Blurryface/twenty one pilots-Stressed Out.mp3
+549:twenty one pilots/Suicide Squad_ The Album/twenty one pilots-Heathens.mp3
+550:twenty one pilots/Blurryface/twenty one pilots-Stressed Out.mp3
 playlist_end
