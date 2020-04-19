@@ -1,0 +1,3 @@
+alias yt='youtube-dl'
+alias ytv='youtube-dl --write-description --write-info-json --write-annotations --write-sub --write-thumbnail'
+alias yta='youtube-dl -x'

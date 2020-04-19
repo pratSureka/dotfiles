@@ -25,6 +25,7 @@ Plug 'mboughaba/i3config.vim'
 Plug 'atahabaki/archman-vim'
 Plug 'arcticicestudio/nord-vim'
 Plug 'junegunn/fzf.vim'
+Plug 'ParamagicDev/vim-medic_chalk'
 
 call plug#end()
 
@@ -63,7 +64,7 @@ set undolevels=1000
 set undoreload=10000
 set undodir=~/.local/share/nvim
 set termguicolors
-colorscheme nord
+colorscheme medic_chalk
 " au VimLeave * set guicursor=a:ver1-blinkon1
 
 "--Plugin-Config--"

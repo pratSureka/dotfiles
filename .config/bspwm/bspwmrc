@@ -24,7 +24,7 @@ bspc rule -a Screenkey manage=off
 #bspc config presel_border_color "$color1"
 
 #--Autostart--#
-xinput set-prop Synaptics\ TM3096-006 "libinput Tapping Enabled" 1
+# xinput set-prop Synaptics\ TM3096-006 "libinput Tapping Enabled" 1
 pbar &
 xsetroot -cursor_name left_ptr &
 sxhkd -c ~/.config/bspwm/sxhkdrc &

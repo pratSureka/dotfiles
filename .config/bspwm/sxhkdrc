@@ -148,7 +148,8 @@ XF86Audio{Play,Next,Prev,Stop}
 
 #light
 XF86MonBrightness{Down,Up}
-	sudo light -{U,A} 5
+    xbacklight -{dec,inc} 5
+	# sudo light -{U,A} 5
 
 # make sxhkd reload its configuration files:
 super + Escape

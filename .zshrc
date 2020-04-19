@@ -1,12 +1,12 @@
 # Created by newuser for 5.8
-#
+pfetch
 
-# History[ -z "$HISTFILE" ] && HISTFILE="$HOME/.zsh_history"
-# alias grep='grep --color=auto'
-# alias ls='ls --color=auto'
-alias yt='youtube-dl'
-alias ytv='youtube-dl --write-description --write-info-json --write-annotations --write-sub --write-thumbnail'
-alias yta='youtube-dl -x'
+HISTFILE=~/.histfile
+HISTSIZE=1000
+SAVEHIST=1000
+setopt appendhistory
+
+source $HOME/.alias
 
 eval "$(starship init zsh)"
 
@@ -17,8 +17,7 @@ if [[ ! -f $HOME/.zinit/bin/zinit.zsh ]]; then
     command git clone https://github.com/zdharma/zinit "$HOME/.zinit/bin" && \
         print -P "%F{33}▓▒░ %F{34}Installation successful.%f%b" || \
         print -P "%F{160}▓▒░ The clone has failed.%f%b"
-fi
-
+fi 
 source "$HOME/.zinit/bin/zinit.zsh"
 autoload -Uz _zinit
 (( ${+_comps} )) && _comps[zinit]=_zinit
@@ -33,10 +32,5 @@ source $HOME/.zsh_plugins
 
 ### End of Zinit's installer chunk
 #
-# fh - repeat history
-fh() {
-  eval $( ([ -n "$ZSH_NAME" ] && fc -l 1 || history) | fzf +s --tac | sed -r 's/ *[0-9]*\*? *//' | sed -r 's/\\/\\\\/g')
-}
-
 #Vim-Keybinding
 bindkey -v

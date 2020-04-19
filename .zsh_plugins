@@ -1,0 +1,4 @@
+zinit light zdharma/fast-syntax-highlighting
+zinit light chrissicool/zsh-256color 
+zinit light desyncr/auto-ls
+zinit light zsh-users/zsh-autosuggestions
