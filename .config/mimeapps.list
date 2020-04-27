@@ -3,4 +3,5 @@
 application/pdf=org.pwmt.zathura-pdf-poppler.desktop
 image/jpeg=sxiv.desktop
 image/png=sxiv.desktop
-text/x-java=nvim.desktop
+text/x-java=editor.desktop
+text/plain=editor.desktop

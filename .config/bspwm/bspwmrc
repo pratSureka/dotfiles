@@ -1,17 +1,13 @@
 #! /bin/sh
 bspc monitor primary -d 1 2 3 4 5 6 7 8 9 10
 
-bspc config border_width         0
+bspc config border_width         2
 bspc config window_gap          30
 
 bspc config split_ratio          0.52
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
-bspc rule -a Gimp desktop='^8' state=floating follow=on
-bspc rule -a Chromium desktop='^2'
-bspc rule -a mplayer2 state=floating
-bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 
 # Set the border colors.
@@ -24,20 +20,20 @@ bspc rule -a Screenkey manage=off
 #bspc config presel_border_color "$color1"
 
 #--Autostart--#
-# xinput set-prop Synaptics\ TM3096-006 "libinput Tapping Enabled" 1
 pbar &
-xsetroot -cursor_name left_ptr &
-sxhkd -c ~/.config/bspwm/sxhkdrc &
-xset b off
-feh --bg-fill ~/.config/wall.png
-setxkbmap -option caps:swapescape
 red &
 compton &
+xset b off
 unclutter &
-pkill dunst
-dunst &
 nm-applet &
 blueman-applet &
+deadd-notification-center &
+feh --bg-fill ~/.config/wall.png
+xsetroot -cursor_name left_ptr &
+setxkbmap -option caps:swapescape
+sxhkd -c ~/.config/bspwm/sxhkdrc &
+xinput set-prop Synaptics\ TM3096-006 "libinput Tapping Enabled" 1
+# dunst &
 # picom &
 # mpd &
 # xrdb ~/.Xdefaults

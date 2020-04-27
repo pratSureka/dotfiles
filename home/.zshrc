@@ -1,5 +1,6 @@
 # Created by newuser for 5.8
-pfetch
+# neofetch --size 20% --kitty ~/.config/neofetch.png
+neofetch
 
 HISTFILE=~/.histfile
 HISTSIZE=1000

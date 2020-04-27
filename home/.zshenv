@@ -1,7 +1,7 @@
 export PATH="$PATH:$HOME/.scripts:$HOME/.local/bin"
 export EDITOR="nvim"
 export TERMINAL="alacritty"
-export BROWSER="firefox"
+export BROWSER="brave"
 export READER="zathura"
 export FILEMGR="lf"
 

@@ -6,6 +6,9 @@ do
       feh --bg-fill "$file" 
       cp "$file" ~/.config/wall.png 
       dunstify --icon="$file" "Wallpaper set" ;;
+    "n")
+      cp "$file" ~/.config/neofetch.png 
+      dunstify --icon="$file" "Neofetch Image Updated" ;;
     "d")
       rm -rf "$file" ;;
     "l")

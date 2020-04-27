@@ -114,29 +114,33 @@ super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
 
 #--WM Independent--#
+
 super + Return
       $TERMINAL
+
 super + {i,r,m}
       $TERMINAL -e {gotop,lf,ncmpcpp}
-super + shift + w 
-	qutebrowser
+
 super + w 
       $BROWSER
+
 super + d 
       dmenu_run
-      # rofi -show drun -config ~/.cache/wal/colors-rofi-dark.rasi -theme ~/.config/rofi/mytheme.rasi
+      
 super + shift + d
       display
+
 super + n
       sxiv -tf ~/Pictures/Wallpapers
+      
 Print
       scrot -z ~/Pictures/Screenshots/$(date '+%y%m%d-%H%M-%S').png
-# super + x
-      # rofi-power
+
 super + c
 	rofi-config
-# super + shift + s
-    # rofi-scripts
+
+super + e
+  kill -s USR1 $(pidof deadd-notification-center)
 
 #Volume
 XF86Audio{RaiseVolume,LowerVolume,Mute}
@@ -144,12 +148,11 @@ XF86Audio{RaiseVolume,LowerVolume,Mute}
 
 #Mpc
 XF86Audio{Play,Next,Prev,Stop}
-      mpc {toggle,next,prev,stop}
+      playerctl {play-pause,next,previous,play-pause}
 
 #light
 XF86MonBrightness{Down,Up}
     xbacklight -{dec,inc} 5
-	# sudo light -{U,A} 5
 
 # make sxhkd reload its configuration files:
 super + Escape

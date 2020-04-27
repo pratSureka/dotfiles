@@ -9,6 +9,9 @@ set wrapscroll true
 set period 10
 set color256 true
 set shell "/bin/bash"
+set preview true
+set previewer ~/.scripts/lf_previewer
+#set previewer pistol
 
 #--Freeing Default Keybindings--#
 map zh
@@ -45,13 +48,14 @@ map m push $mkdir<space>
 map e $chmod +x $fx
 
 #--Custom functions--#
-# cmd open ${{
-#     case $(file --mime-type "$f" -bL) in
-#         text/*|application/json) $EDITOR "$f";;
-#         video/*|image/*/application/pdf) xdg-open "$f" & disown;;
-#         *) xdg-open "$f" ;;
-#     esac
-# }}
+cmd open ${{
+    case $(file --mime-type "$f" -bL) in
+        text/*|application/json) $EDITOR "$f";;
+        video/*|image/*/application/pdf) xdg-open "$f" & disown;;
+        application/pdf) zathura "$f" & disown;;
+        *) xdg-open "$f" ;;
+    esac
+}}
 
 cmd rename %[ -e $1 ] && printf "file exists" || mv $f $1
 
