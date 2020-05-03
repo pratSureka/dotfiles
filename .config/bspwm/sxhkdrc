@@ -140,11 +140,11 @@ super + c
 	rofi-config
 
 super + e
-  kill -s USR1 $(pidof deadd-notification-center)
+  alacritty -e nvim
 
 #Volume
 XF86Audio{RaiseVolume,LowerVolume,Mute}
-      volc {3,2,1}
+      volc {up,down,mute}
 
 #Mpc
 XF86Audio{Play,Next,Prev,Stop}
@@ -152,7 +152,7 @@ XF86Audio{Play,Next,Prev,Stop}
 
 #light
 XF86MonBrightness{Down,Up}
-    xbacklight -{dec,inc} 5
+    backlight {down,up} 
 
 # make sxhkd reload its configuration files:
 super + Escape

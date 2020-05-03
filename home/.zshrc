@@ -2,10 +2,34 @@
 # neofetch --size 20% --kitty ~/.config/neofetch.png
 neofetch
 
-HISTFILE=~/.histfile
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+# Enable colors and change prompt:
+autoload -U colors && colors
+
+# History in cache directory:
 HISTSIZE=1000
 SAVEHIST=1000
+HISTFILE=~/.cache/zsh/history
 setopt appendhistory
+
+# Basic auto/tab complete:
+autoload -U compinit
+zstyle ':completion:*' menu select
+# Auto complete with case insenstivity
+zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
+
+zmodload zsh/complist
+compinit
+_comp_options+=(globdots)		# Include hidden files.
+
+# vi mode
+bindkey -v
+export KEYTIMEOUT=1
+
+# Enable searching through history
+bindkey '^R' history-incremental-pattern-search-backward
 
 source $HOME/.alias
 
@@ -32,6 +56,3 @@ zinit light-mode for \
 source $HOME/.zsh_plugins
 
 ### End of Zinit's installer chunk
-#
-#Vim-Keybinding
-bindkey -v

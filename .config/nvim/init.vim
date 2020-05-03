@@ -30,6 +30,7 @@ Plug 'liuchengxu/vista.vim'
 Plug 'ajmwagar/vim-deus'
 Plug 'liuchengxu/vim-which-key'
 Plug 'mhinz/vim-startify'
+Plug 'joshdick/onedark.vim'
 
 "vim-lsp
 Plug 'prabirshrestha/async.vim'
@@ -80,7 +81,7 @@ set undolevels=1000
 set undoreload=10000
 set undodir=~/.local/share/nvim
 set termguicolors
-colorscheme deus
+colorscheme onedark
 autocmd CompleteDone * pclose
 " au VimLeave * set guicursor=a:ver1-blinkon1
 
@@ -111,7 +112,7 @@ let g:indentLine_enabled = 1
 set noshowmode
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
-let g:airline_theme='deus'
+let g:airline_theme='onedark'
 
 "Completor
 " let g:completor_python_binary = '/usr/lib/python3.8/'
@@ -177,3 +178,7 @@ let g:deoplete#enable_at_startup = 1
 inoremap <expr> <M-Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 inoremap <expr> <tab> pumvisible() ? "\<C-y>" : "\<cr>"
+
+"Onedark
+let g:onedark_termcolors = 256
+let g:onedark_terminal_italics = 1
