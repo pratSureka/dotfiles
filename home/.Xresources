@@ -11,6 +11,9 @@ URxvt.keysym.C-0:resize-font:reset
 *.background:   #1d1f21
 *.cursorColor:  #d8dee9
 
+Sxiv.foreground: #bbbbbb
+Sxiv.background: #222222
+
 ! black
 *.color0:       #313539
 *.color8:       #676f78

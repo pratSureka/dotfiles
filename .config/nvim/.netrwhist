@@ -1,5 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =4
+let g:netrw_dirhistcnt =6
+let g:netrw_dirhist_6='/home/prat/.scripts'
+let g:netrw_dirhist_5='/home/prat/.config/polybar'
 let g:netrw_dirhist_4='/home/prat/.scripts'
 let g:netrw_dirhist_3='/home/prat/.config/deadd'
 let g:netrw_dirhist_2='/home/prat/.config/bspwm'
@@ -8,5 +10,3 @@ let g:netrw_dirhist_0='/home/prat/.config/bspwm'
 let g:netrw_dirhist_9='/home/prat/.config/kitty'
 let g:netrw_dirhist_8='/etc/sv/elogind'
 let g:netrw_dirhist_7='/etc/sv'
-let g:netrw_dirhist_6='/home/prat/.config/mpd'
-let g:netrw_dirhist_5='/home/prat/.scripts'

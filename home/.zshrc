@@ -1,6 +1,4 @@
 # Created by newuser for 5.8
-# neofetch --size 20% --kitty ~/.config/neofetch.png
-neofetch
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return

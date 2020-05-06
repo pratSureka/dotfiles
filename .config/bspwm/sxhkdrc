@@ -131,7 +131,7 @@ super + shift + d
       display
 
 super + n
-      sxiv -tf ~/Pictures/Wallpapers
+      sxiv -b -tf ~/Pictures/Wallpapers
       
 Print
       scrot -z ~/Pictures/Screenshots/$(date '+%y%m%d-%H%M-%S').png
@@ -156,4 +156,5 @@ XF86MonBrightness{Down,Up}
 
 # make sxhkd reload its configuration files:
 super + Escape
-	pkill -USR1 -x sxhkd
+	pkill -USR1 -x sxhkd -c ~/.config/bspwm/sxhkdrc
+

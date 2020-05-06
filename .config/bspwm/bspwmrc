@@ -21,9 +21,12 @@ bspc config focused_border_color "$color15"
 #bspc config presel_border_color "$color1"
 
 #--Autostart--#
+if [[ ! `pgrep redshift` ]]; then
+   redshift & 
+fi
+
 pbar &
-red &
-compton &
+picom &
 xset b off
 unclutter &
 nm-applet &
@@ -35,8 +38,9 @@ xsetroot -cursor_name left_ptr &
 setxkbmap -option caps:swapescape
 sxhkd -c ~/.config/bspwm/sxhkdrc &
 xinput set-prop Synaptics\ TM3096-006 "libinput Tapping Enabled" 1
+# red &
+# compton &
 # dunst &
-# picom &
 # mpd &
 # xrdb ~/.Xdefaults
 # xrdb ~/.Xresources

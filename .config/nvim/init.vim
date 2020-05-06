@@ -8,7 +8,7 @@ endif
 
 call plug#begin('~/.local/share/nvim/site/plugged')
 
-Plug 'luochen1990/rainbow'
+Plug 'junegunn/rainbow_parentheses.vim'
 Plug 'Yggdroot/indentLine'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -92,6 +92,8 @@ map <silent><leader>q :q<CR>
 map <silent><leader>wq :wq<CR>
 
 "--Plugin-Config--"
+"
+lua require'plug-colorizer'
 
 "Vim-plug
 
@@ -101,7 +103,10 @@ nnoremap <silent><leader>pu :PlugUpdate<CR>
 nnoremap <silent><leader>ps :PlugStatus<CR>
 
 "Rainbow
-let g:rainbow_active = 1
+let g:rainbow#max_level = 16
+let g:rainbow#pairs = [['(', ')'], ['[', ']'], ['{', '}']]
+
+autocmd FileType * RainbowParentheses
 
 "Indentline
 "let g:indentLine_setColors = 0
