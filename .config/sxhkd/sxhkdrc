@@ -1,17 +1,18 @@
 super + Return
       $TERMINAL
 super + {i,r,m}
-      $TERMINAL -e {gotop,lf,ncmpcpp}
+      $TERMINAL -e {bashtop,ranger,ncmpcpp}
 super + w 
-      $BROWSER
+      firefox
 super + d 
-      dmenu_run
+      dmenu_run -l 8 -b
+
 super + n
       sxiv -tf ~/Pictures/Wallpapers
 Print
       scrot -z ~/Pictures/Screenshots/$(date '+%y%m%d-%H%M-%S').png
-super + x
-      i3-msg exit
+super + shift + x
+      power-dmenu
 
 #Volume
 XF86Audio{RaiseVolume,LowerVolume}
@@ -21,12 +22,11 @@ XF86AudioMute
 
 #Mpc
 XF86Audio{Play,Next,Prev,Stop}
-      mpc {toggle,next,prev,stop}
+      playerctl {play-pause,next,previous,stop}
 
 #light
 XF86MonBrightness{Down,Up}
-	sudo light -{U,A} 5
-#      xbacklight -{dec,inc} 5
+      xbacklight -{dec,inc} 5
 
 # make sxhkd reload its configuration files:
 super + Escape

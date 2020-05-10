@@ -31,7 +31,7 @@ bindkey '^R' history-incremental-pattern-search-backward
 
 source $HOME/.alias
 
-eval "$(starship init zsh)"
+#eval "$(starship init zsh)"
 
 ### Added by Zinit's installer
 if [[ ! -f $HOME/.zinit/bin/zinit.zsh ]]; then
