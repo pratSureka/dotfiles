@@ -22,3 +22,11 @@
 *.color14:  #00ffff
 *.color15:  #aabac8
 *.background:   #000000
+*.foreground:   #aabac8
+
+*.normbgcolor           : #1e2127
+*.normbordercolor       : #1e2127
+*.normfgcolor           : #e6efff
+*.selfgcolor            : #e06c75
+*.selbordercolor        : #d19a66
+*.selbgcolor            : #1e2127

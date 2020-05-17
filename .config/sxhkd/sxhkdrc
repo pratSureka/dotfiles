@@ -1,7 +1,7 @@
 super + Return
       $TERMINAL
 super + {i,r,m}
-      $TERMINAL -e {bashtop,ranger,ncmpcpp}
+      $TERMINAL -e {bashtop,$FILEMGR,ncmpcpp}
 super + w 
       firefox
 super + d 
@@ -10,23 +10,21 @@ super + d
 super + n
       sxiv -tf ~/Pictures/Wallpapers
 Print
-      scrot -z ~/Pictures/Screenshots/$(date '+%y%m%d-%H%M-%S').png
+      maim ~/Pictures/Screenshots/$(date '+%y%m%d').png ; dunstify --icon="~/Pictures/Screenshots/$(date '+%y%m%d').png" "Screenschot taken" ;;
+
 super + shift + x
       power-dmenu
 
 #Volume
-XF86Audio{RaiseVolume,LowerVolume}
-      pulsemixer --change-volume {+5,-5}
-XF86AudioMute
-      pulsemixer --toggle-mute
+XF86Audio{RaiseVolume,LowerVolume,Mute}
+    volc {up,down,mute}
 
-#Mpc
 XF86Audio{Play,Next,Prev,Stop}
       playerctl {play-pause,next,previous,stop}
 
 #light
 XF86MonBrightness{Down,Up}
-      xbacklight -{dec,inc} 5
+      backlight {down,up}
 
 # make sxhkd reload its configuration files:
 super + Escape

@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =6
+let g:netrw_dirhistcnt =7
+let g:netrw_dirhist_7='/home/prat/git_repos/Suckless/dwm'
 let g:netrw_dirhist_6='/home/prat/.scripts'
 let g:netrw_dirhist_5='/home/prat/.config/polybar'
 let g:netrw_dirhist_4='/home/prat/.scripts'
@@ -9,4 +10,3 @@ let g:netrw_dirhist_1='/home/prat/.scripts'
 let g:netrw_dirhist_0='/home/prat/.config/bspwm'
 let g:netrw_dirhist_9='/home/prat/.config/kitty'
 let g:netrw_dirhist_8='/etc/sv/elogind'
-let g:netrw_dirhist_7='/etc/sv'

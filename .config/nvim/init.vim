@@ -163,7 +163,7 @@ nnoremap <silent> <leader>      :<c-u>WhichKey '<Space>'<CR>
 let g:lsp_signs_enabled = 1         " enable signs
 let g:lsp_diagnostics_echo_cursor = 1 " enable echo under cursor when in normal mode
 let g:lsp_highlight_references_enabled = 1
-let g:lsp_diagnostics_enabled = 0
+let g:lsp_diagnostics_enabled = 1
 
 nnoremap <silent><leader>cn :LspNextDiagnostic<CR>
 nnoremap <silent><leader>cp :LspPreviousDiagnostic<CR>
@@ -173,8 +173,6 @@ nnoremap <silent><leader>ch :LspHover<CR>
 "Vim-lsp-settings
 let g:lsp_settings = {
 \  'clangd': {'cmd': ['clangd']},
-\  'vim': {'cmd': ['vim-language-server']},
-\  'python': {'cmd': ['pyls']},
 \  'efm-langserver': {'disabled': v:false}
 \}
 
