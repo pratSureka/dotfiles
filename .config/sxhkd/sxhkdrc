@@ -1,7 +1,7 @@
 super + Return
-      $TERMINAL
+      $TERM
 super + {i,r,m}
-      $TERMINAL -e {bashtop,$FILEMGR,ncmpcpp}
+      alacritty -e {bashtop,ranger,ncmpcpp}
 super + w 
       firefox
 super + d 
