@@ -169,64 +169,162 @@ font:
 # If `true`, bold text is drawn using the bright color variants.
 draw_bold_text_with_bright_colors: true
 
-colors:
-  # Default colors
-  primary:
-    background: '#1e2127'
-    foreground: '#abb2bf'
+scheme:
+    campbell: &campbell
+      primary:
+        background: '#0c0c0c'
+        foreground: '#cccccc'
 
-    # Bright and dim foreground colors
-    #
-    # The dimmed foreground color is calculated automatically if it is not present.
-    # If the bright foreground color is not set, or `draw_bold_text_with_bright_colors`
-    # is `false`, the normal foreground color will be used.
-    #dim_foreground: '0x9a9a9a'
-    bright_foreground: '#e6efff'
+      # Normal colors
+      normal:
+        black:      '#0c0c0c'
+        red:        '#c50f1f'
+        green:      '#13a10e'
+        yellow:     '#c19c00'
+        blue:       '#0037da'
+        magenta:    '#881798'
+        cyan:       '#3a96dd'
+        white:      '#cccccc'
 
-  # Cursor colors
-  #
-  # Colors which should be used to draw the terminal cursor. If these are unset,
-  # the cursor color will be the inverse of the cell color.
-  #cursor:
-  #  text: '0x000000'
-  #  cursor: '0xffffff'
+      # Bright colors
+      bright:
+        black:      '#767676'
+        red:        '#e74856'
+        green:      '#16c60c'
+        yellow:     '#f9f1a5'
+        blue:       '#3b78ff'
+        magenta:    '#b4009e'
+        cyan:       '#61d6d6'
+        white:      '#f2f2f2'
 
-  # Normal colors
-  normal:
-    black:   '#1e2127'
-    red:     '#e06c75'
-    green:   '#98c379'
-    yellow:  '#d19a66'
-    blue:    '#61afef'
-    magenta: '#c678dd'
-    cyan:    '#56b6c2'
-    white:   '#828791'
+    base16_default_dark: &base16
+        primary:
+         background: '#181818'
+         foreground: '#d8d8d8'
 
-  # Bright colors
-  bright:
-    black:   '#5c6370'
-    red:     '#e06c75'
-    green:   '#98c379'
-    yellow:  '#d19a66'
-    blue:    '#61afef'
-    magenta: '#c678dd'
-    cyan:    '#56b6c2'
-    white:   '#e6efff'
+        # Colors the cursor will use if `custom_cursor_colors` is true
+        cursor:
+          text: '#d8d8d8'
+          cursor: '#d8d8d8'
 
-  # Dim colors
-  #
-  # If the dim colors are not set, they will be calculated automatically based
-  # on the `normal` colors.
-  dim:
-    black:   '#1e2127'
-    red:     '#e06c75'
-    green:   '#98c379'
-    yellow:  '#d19a66'
-    blue:    '#61afef'
-    magenta: '#c678dd'
-    cyan:    '#56b6c2'
-    white:   '#828791'
+        # Normal colors
+        normal:
+          black:   '#181818'
+          red:     '#ab4642'
+          green:   '#a1b56c'
+          yellow:  '#f7ca88'
+          blue:    '#7cafc2'
+          magenta: '#ba8baf'
+          cyan:    '#86c1b9'
+          white:   '#d8d8d8'
 
+        # Bright colors
+        bright:
+          black:   '#585858'
+          red:     '#ab4642'
+          green:   '#a1b56c'
+          yellow:  '#f7ca88'
+          blue:    '#7cafc2'
+          magenta: '#ba8baf'
+          cyan:    '#86c1b9'
+          white:   '#f8f8f8'
+
+    darkside: &darkside
+    # Colors (Darkside)
+      primary:
+        background: "#222324"
+        foreground: "#BABABA"
+
+      # Normal colors
+      normal:
+        black:    "#000000"
+        red:      "#E8341C"
+        green:    "#68C256"
+        yellow:   "#F2D42C"
+        blue:     "#1C98E8"
+        magenta:  "#8E69C9"
+        cyan:     "#1C98E8"
+        white:    "#BABABA"
+
+      # Bright colors
+      bright:
+        black:    "#666666"
+        red:      "#E05A4F"
+        green:    "#77B869"
+        yellow:   "#EFD64B"
+        blue:     "#387CD3"
+        magenta:  "#957BBE"
+        cyan:     "#3D97E2"
+        white:    "#BABABA"
+
+    hyper: &hyper
+    # Colors (Hyper)
+      # Default colors
+      primary:
+        background: '#000000'
+        foreground: '#ffffff'
+      cursor:
+        text: '#F81CE5'
+        cursor: '#ffffff'
+
+      # Normal colors
+      normal:
+        black:   '#000000'
+        red:     '#fe0100'
+        green:   '#33ff00'
+        yellow:  '#feff00'
+        blue:    '#0066ff'
+        magenta: '#cc00ff'
+        cyan:    '#00ffff'
+        white:   '#d0d0d0'
+
+      # Bright colors
+      bright:
+        black:   '#808080'
+        red:     '#fe0100'
+        green:   '#33ff00'
+        yellow:  '#feff00'
+        blue:    '#0066ff'
+        magenta: '#cc00ff'
+        cyan:    '#00ffff'
+        white:   '#FFFFFF'
+
+    iterm: &iterm
+
+    # Colors (iTerm 2 default theme)
+     # Default colors
+     primary:
+       background: '#101421'
+       foreground: '#fffbf6'
+
+     # Normal colors
+     normal:
+       black:   '#2e2e2e'
+       red:     '#eb4129'
+       green:   '#abe047'
+       yellow:  '#f6c744'
+       blue:    '#47a0f3'
+       magenta: '#7b5cb0'
+       cyan:    '#64dbed'
+       white:   '#e5e9f0'
+
+     # Bright colors
+     bright:
+       black:   '#565656'
+       red:     '#ec5357'
+       green:   '#c0e17d'
+       yellow:  '#f9da6a'
+       blue:    '#49a4f8'
+       magenta: '#a47de9'
+       cyan:    '#99faf2'
+       white:   '#ffffff'
+
+# base16
+# iterm
+# hyper
+# darkside
+# campbell
+colors: *hyper
   # Indexed Colors
   #
   # The indexed colors include all colors from 16 to 256.
@@ -302,7 +400,7 @@ visual_bell:
 #
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
-background_opacity: 0.8
+background_opacity: 0.95
 
 # Mouse bindings
 #
