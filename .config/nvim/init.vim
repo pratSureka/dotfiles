@@ -12,25 +12,21 @@ Plug 'junegunn/rainbow_parentheses.vim'
 Plug 'Yggdroot/indentLine'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'atahabaki/archman-vim'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'easymotion/vim-easymotion'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
 Plug 'mboughaba/i3config.vim'
-Plug 'atahabaki/archman-vim'
-Plug 'arcticicestudio/nord-vim'
 Plug 'junegunn/fzf.vim'
-Plug 'ParamagicDev/vim-medic_chalk'
 Plug 'norcalli/nvim-colorizer.lua'
 Plug 'ptzz/lf.vim'
 Plug 'rbgrouleff/bclose.vim'
 Plug 'liuchengxu/vista.vim'
-Plug 'ajmwagar/vim-deus'
 Plug 'liuchengxu/vim-which-key'
 Plug 'mhinz/vim-startify'
-Plug 'joshdick/onedark.vim'
+Plug 'chriskempson/base16-vim' 
+Plug 'jdsimcoe/hyper.vim'
 
 "vim-lsp
 Plug 'prabirshrestha/async.vim'
@@ -81,7 +77,7 @@ set undolevels=1000
 set undoreload=10000
 set undodir=~/.local/share/nvim
 set termguicolors
-colorscheme onedark
+colorscheme hyper
 autocmd CompleteDone * pclose
 " au VimLeave * set guicursor=a:ver1-blinkon1
 
@@ -90,6 +86,8 @@ autocmd CompleteDone * pclose
 map <silent><leader>w :w<CR>
 map <silent><leader>q :q<CR> 
 map <silent><leader>wq :wq<CR>
+map <silent><leader>, :tabn<CR>
+map <silent><leader>. :tabN<CR>
 
 "--Plugin-Config--"
 "
@@ -117,7 +115,7 @@ let g:indentLine_enabled = 1
 set noshowmode
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
-let g:airline_theme='onedark'
+" let g:airline_theme='onedark'
 
 "Completor
 " let g:completor_python_binary = '/usr/lib/python3.8/'
