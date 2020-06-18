@@ -106,8 +106,8 @@ font:
     #   - (macOS) Menlo
     #   - (Linux) monospace
     #   - (Windows) Consolas
-    # family: JetBrains Mono
-    family: JetBrains Mono
+    # family: JetBrainsMono Nerd Font
+    family: SauceCodePro Nerd Font
 
     # The `style` can be specified to pick a specific face.
     style: Regular
@@ -118,7 +118,7 @@ font:
     #
     # If the bold family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: JetBrains Mono
+    family: SauceCodePro Nerd Font
 
     # The `style` can be specified to pick a specific face.
     style: Bold
@@ -129,10 +129,20 @@ font:
     #
     # If the italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: JetBrains Mono
+    family: SauceCodePro Nerd Font
 
     # The `style` can be specified to pick a specific face.
     style: Italic
+
+  light:
+    # Font family
+    #
+    # If the italic family is not specified, it will fall back to the
+    # value specified for the normal font.
+    family: SauceCodePro Nerd Font
+
+    # The `style` can be specified to pick a specific face.
+    style: Light
 
   # Point size
   size: 9.0
@@ -170,93 +180,6 @@ font:
 draw_bold_text_with_bright_colors: true
 
 scheme:
-    campbell: &campbell
-      primary:
-        background: '#0c0c0c'
-        foreground: '#cccccc'
-
-      # Normal colors
-      normal:
-        black:      '#0c0c0c'
-        red:        '#c50f1f'
-        green:      '#13a10e'
-        yellow:     '#c19c00'
-        blue:       '#0037da'
-        magenta:    '#881798'
-        cyan:       '#3a96dd'
-        white:      '#cccccc'
-
-      # Bright colors
-      bright:
-        black:      '#767676'
-        red:        '#e74856'
-        green:      '#16c60c'
-        yellow:     '#f9f1a5'
-        blue:       '#3b78ff'
-        magenta:    '#b4009e'
-        cyan:       '#61d6d6'
-        white:      '#f2f2f2'
-
-    base16_default_dark: &base16
-        primary:
-         background: '#181818'
-         foreground: '#d8d8d8'
-
-        # Colors the cursor will use if `custom_cursor_colors` is true
-        cursor:
-          text: '#d8d8d8'
-          cursor: '#d8d8d8'
-
-        # Normal colors
-        normal:
-          black:   '#181818'
-          red:     '#ab4642'
-          green:   '#a1b56c'
-          yellow:  '#f7ca88'
-          blue:    '#7cafc2'
-          magenta: '#ba8baf'
-          cyan:    '#86c1b9'
-          white:   '#d8d8d8'
-
-        # Bright colors
-        bright:
-          black:   '#585858'
-          red:     '#ab4642'
-          green:   '#a1b56c'
-          yellow:  '#f7ca88'
-          blue:    '#7cafc2'
-          magenta: '#ba8baf'
-          cyan:    '#86c1b9'
-          white:   '#f8f8f8'
-
-    darkside: &darkside
-    # Colors (Darkside)
-      primary:
-        background: "#222324"
-        foreground: "#BABABA"
-
-      # Normal colors
-      normal:
-        black:    "#000000"
-        red:      "#E8341C"
-        green:    "#68C256"
-        yellow:   "#F2D42C"
-        blue:     "#1C98E8"
-        magenta:  "#8E69C9"
-        cyan:     "#1C98E8"
-        white:    "#BABABA"
-
-      # Bright colors
-      bright:
-        black:    "#666666"
-        red:      "#E05A4F"
-        green:    "#77B869"
-        yellow:   "#EFD64B"
-        blue:     "#387CD3"
-        magenta:  "#957BBE"
-        cyan:     "#3D97E2"
-        white:    "#BABABA"
-
     hyper: &hyper
     # Colors (Hyper)
       # Default colors
@@ -288,43 +211,119 @@ scheme:
         magenta: '#cc00ff'
         cyan:    '#00ffff'
         white:   '#FFFFFF'
+      selection:
+        # text: '#000000'
+        background: '#808080'
+    
+    ayu: &ayu
+    # Colors (Ayu Dark)
+      # Default colors
+      primary:
+        background: '0x0f1419'
+        foreground: '0xe6e1cf'
 
-    iterm: &iterm
+      # Normal colors
+      normal:
+        black:   '0x000000'
+        red:     '0xf34a4a'
+        green:   '0xbae67e'
+        yellow:  '0xffee99'
+        blue:    '0x73d0ff'
+        magenta: '0xd4bfff'
+        cyan:    '0x83CEC6'
+        white:   '0xf2f2f2'
 
-    # Colors (iTerm 2 default theme)
-     # Default colors
-     primary:
-       background: '#101421'
-       foreground: '#fffbf6'
+      # Bright colors
+      bright:
+        black:   '0x737d87'
+        red:     '0xff3333'
+        green:   '0xc2d94c'
+        yellow:  '0xe7c547'
+        blue:    '0x59c2ff'
+        magenta: '0xb77ee0'
+        cyan:    '0x5ccfe6'
+        white:   '0xffffff'
 
-     # Normal colors
-     normal:
-       black:   '#2e2e2e'
-       red:     '#eb4129'
-       green:   '#abe047'
-       yellow:  '#f6c744'
-       blue:    '#47a0f3'
-       magenta: '#7b5cb0'
-       cyan:    '#64dbed'
-       white:   '#e5e9f0'
+    one-dark : &one
+      # Default colors
+      primary:
+        background: '0x1e2127'
+        foreground: '0xabb2bf'
+        bright_foreground: '0xe6efff'
 
-     # Bright colors
-     bright:
-       black:   '#565656'
-       red:     '#ec5357'
-       green:   '#c0e17d'
-       yellow:  '#f9da6a'
-       blue:    '#49a4f8'
-       magenta: '#a47de9'
-       cyan:    '#99faf2'
-       white:   '#ffffff'
+      # Cursor colors
+       # text: '0x000000'
+       # cursor: '0xffffff'
 
-# base16
-# iterm
+      # Normal colors
+      normal:
+        black:   '0x1e2127'
+        red:     '0xe06c75'
+        green:   '0x98c379'
+        yellow:  '0xd19a66'
+        blue:    '0x61afef'
+        magenta: '0xc678dd'
+        cyan:    '0x56b6c2'
+        white:   '0x828791'
+
+      # Bright colors
+      bright:
+        black:   '0x5c6370'
+        red:     '0xe06c75'
+        green:   '0x98c379'
+        yellow:  '0xd19a66'
+        blue:    '0x61afef'
+        magenta: '0xc678dd'
+        cyan:    '0x56b6c2'
+        white:   '0xe6efff'
+
+      # Dim colors
+      dim:
+        black:   '0x1e2127'
+        red:     '0xe06c75'
+        green:   '0x98c379'
+        yellow:  '0xd19a66'
+        blue:    '0x61afef'
+        magenta: '0xc678dd'
+        cyan:    '0x56b6c2'
+        white:   '0x828791'
+
+    gruvbox: &gruv
+    # Colors (Gruvbox dark)
+      # Default colors
+      primary:
+        # hard contrast: background = '0x1d2021'
+        background: '0x282828'
+        # soft contrast: background = '0x32302f'
+        foreground: '0xebdbb2'
+
+      # Normal colors
+      normal:
+        black:   '0x282828'
+        red:     '0xcc241d'
+        green:   '0x98971a'
+        yellow:  '0xd79921'
+        blue:    '0x458588'
+        magenta: '0xb16286'
+        cyan:    '0x689d6a'
+        white:   '0xa89984'
+
+      # Bright colors
+      bright:
+        black:   '0x928374'
+        red:     '0xfb4934'
+        green:   '0xb8bb26'
+        yellow:  '0xfabd2f'
+        blue:    '0x83a598'
+        magenta: '0xd3869b'
+        cyan:    '0x8ec07c'
+        white:   '0xebdbb2'
+
 # hyper
-# darkside
-# campbell
-colors: *hyper
+# ayu
+# one
+# gruv
+colors: *one
   # Indexed Colors
   #
   # The indexed colors include all colors from 16 to 256.
@@ -400,7 +399,7 @@ visual_bell:
 #
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
-background_opacity: 0.95
+background_opacity: 9.5
 
 # Mouse bindings
 #
@@ -470,11 +469,11 @@ cursor:
   #   - ▇ Block
   #   - _ Underline
   #   - | Beam
-  style: Block
+  style: Beam
 
   # If this is `true`, the cursor will be rendered as a hollow box when the
   # window is not focused.
-  unfocused_hollow: true
+  unfocused_hollow: false
 
 # Live config reload (changes require restart)
 live_config_reload: true
@@ -489,7 +488,8 @@ live_config_reload: true
 #   - (Linux) user login shell
 #   - (Windows) powershell
 shell:
-  program: /bin/bash
+  # program: /bin/bash
+  program: /usr/bin/zsh
 #  args:
 #    - --login
 

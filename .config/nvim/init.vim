@@ -25,8 +25,10 @@ Plug 'rbgrouleff/bclose.vim'
 Plug 'liuchengxu/vista.vim'
 Plug 'liuchengxu/vim-which-key'
 Plug 'mhinz/vim-startify'
-Plug 'chriskempson/base16-vim' 
 Plug 'jdsimcoe/hyper.vim'
+Plug 'rafi/awesome-vim-colorschemes'
+Plug 'airblade/vim-gitgutter'
+Plug 'sheerun/vim-polyglot'
 
 "vim-lsp
 Plug 'prabirshrestha/async.vim'
@@ -77,12 +79,26 @@ set undolevels=1000
 set undoreload=10000
 set undodir=~/.local/share/nvim
 set termguicolors
-colorscheme hyper
+
+"One
+colorscheme one
+set background=dark
+let g:one_allow_italics = 1
+
+" Molokai
+" colorscheme molokai
+" let g:rehash256 = 1
+
+" Hyper
+" colorscheme hyper
+" hi Visual  guifg=none guibg=#2a2a2a gui=none
+" hi CursorLine  guifg=none guibg=#2a2a2a gui=none
+
 autocmd CompleteDone * pclose
-" au VimLeave * set guicursor=a:ver1-blinkon1
+au VimLeave * set guicursor=a:ver1-blinkon1
 
 "--Key-Bindings--"
-"
+
 map <silent><leader>w :w<CR>
 map <silent><leader>q :q<CR> 
 map <silent><leader>wq :wq<CR>
@@ -114,7 +130,7 @@ let g:indentLine_enabled = 1
 "Vim-Airline
 set noshowmode
 let g:airline#extensions#tabline#enabled = 1
-let g:airline_powerline_fonts = 1
+let g:airline_powerline_fonts = 0
 " let g:airline_theme='onedark'
 
 "Completor
@@ -176,8 +192,8 @@ let g:lsp_settings = {
 
 "Deoplete
 let g:deoplete#enable_at_startup = 1
-inoremap <expr> <M-Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
-inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+inoremap <expr> <M-j> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <M-k> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 inoremap <expr> <tab> pumvisible() ? "\<C-y>" : "\<cr>"
 
 "Onedark

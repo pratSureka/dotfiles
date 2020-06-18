@@ -22,7 +22,7 @@
 !!Dwm Colours
 *.normbgcolor           : #000000
 *.normbordercolor       : #000000
-*.normfgcolor           : #33ff00
-*.selfgcolor            : #33ff00
-*.selbordercolor        : #000000
-*.selbgcolor            : #000000
+*.normfgcolor           : #ffffff
+*.selfgcolor            : #ffffff
+*.selbordercolor        : #2a2a2a
+*.selbgcolor            : #2a2a2a
