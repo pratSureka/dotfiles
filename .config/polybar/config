@@ -6,7 +6,7 @@ background = #bb212121
 foreground = #eeffff
 modules-left = bspwm title 
 modules-center =
-modules-right = memory cpu pulseaudio wlan battery date
+modules-right = memory cpu updates pulseaudio wlan eth battery date
 width                    = 99%
 height                   = 28
 radius                   = 0
@@ -15,10 +15,9 @@ bottom                   = false
 #module-margin-left       = 1
 #module-margin-right      = 1
 
-font-0 = "Hack Nerd Font:size=10;2"
-font-1 = "Hack Nerd Font:size=10;2"
+font-0 = "JetBrains Mono:size=10;2"
+font-1 = "Symbols Nerd Font:size=10;2"
 
-override-redirect = false
 offset-x = 0.5%
 offset-y = 1%
 screenchange-reload      = true
@@ -29,6 +28,8 @@ padding-left             = 0
 padding-right            = 0
 module-margin-left       = 1
 module-margin-right      = 1
+wm-restack = bspwm
+override-redirect = false
 
 tray-position = right
 tray-padding = 1
@@ -40,12 +41,12 @@ tray-padding = 1
 type = internal/memory
 internal = 1
 format = <label>
-label =   %mb_used%
+label =  %mb_used%
 
 [module/cpu]
 type = internal/cpu
 internal = 0.5
-format =   <label>%
+format =  <label>%
 label = %percentage%
 
 [module/date]
@@ -64,9 +65,9 @@ battery = BAT0
 adapter = ADP1
 poll-interval = 2
 time-format = %H:%M
-format-charging = <animation-charging> <label-charging>
+format-charging = <animation-charging><label-charging>
 
-format-discharging = <ramp-capacity> <label-discharging>
+format-discharging = <ramp-capacity><label-discharging>
 
 format-full-prefix = " "
 
@@ -98,10 +99,8 @@ format-connected = <ramp-signal> <label-connected>
 label-connected = %essid%
 
 format-disconnected = <label-disconnected>
-; label-disconnected = Wifi Disconnected
 label-disconnected =
-format-disconnected-prefix =
-; format-disconnected-prefix = "睊 "
+format-disconnected-prefix = "睊 "
 ; label-disconnected-foreground = ${colors.foreground-alt}
 
 ramp-signal-0 = 
@@ -120,13 +119,13 @@ ramp-volume-2 = 
 
 [module/eth]
 type = internal/network
-interface = enp2s0
+interface = enp3s0
 interval = 3.0
 format-connected = <label-connected>
-format-connected-prefix = "  "
-label-connected = %downspeed:9%
+format-connected-prefix =
+label-connected =
 format-disconnected = <label-disconnected>
-label-disconnected = not connected
+label-disconnected = ""
 format-padding = 1
 
 
@@ -146,20 +145,24 @@ label-song-ellipsis = true
 [module/bspwm]
 type = internal/bspwm
 
-label-focused = %index%
-; label-focused-padding = 1
-label-focused-padding = 3
-label-focused-background = "#82aaff"
-label-focused-foreground = "#212121"
-
+format = <label-state>
+label-active = %index%
 label-occupied = %index%
-label-occupied-padding = 1
-
-label-urgent = %index%!
-label-urgent-padding = 1
-
+label-urgent = %index%
 label-empty = %index%
+
+label-occupied-padding = 1
 label-empty-padding = 1
+label-urgent-padding = 3
+label-active-padding = 3
+
+label-active-background = "#82aaff"
+label-urgent-background = "#e06c75"
+
+label-active-foreground = "#212121"
+label-urgent-foreground = "#212121"
+label-empty-foreground = "#ffffff"
+label-occupied-foreground = "#56b5c2"
 
 ; Separator in between workspaces
 ; label-separator = |
@@ -197,14 +200,14 @@ label-urgent-padding = 3
 type = internal/xwindow
 format = <label>
 label =   %title%
-label-maxlen = 20
-
+label-maxlen = 30
 
 [module/updates]
 type = custom/script
-exec = ~/.config/polybar/updates.sh
+exec = ~/.scripts/update.sh
+click-left = `$TERMINAL -e sudo pacman -Su`
 tail = true
-interval = 5
+interval = 100
 
 [module/separator]
 type = custom/text
