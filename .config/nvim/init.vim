@@ -95,7 +95,7 @@ let g:one_allow_italics = 1
 " hi CursorLine  guifg=none guibg=#2a2a2a gui=none
 
 autocmd CompleteDone * pclose
-" au VimLeave * set guicursor=a:ver1-blinkon1
+au VimLeave * set guicursor=a:ver1-blinkon1
 
 "--Key-Bindings--"
 
