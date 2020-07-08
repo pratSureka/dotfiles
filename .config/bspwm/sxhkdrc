@@ -119,13 +119,13 @@ super + Return
       $TERMINAL
 
 super + {i,r,m}
-      $TERMINAL -e {gotop,lf,ncmpcpp}
+      $TERMINAL -e {bashtop,lf,ncmpcpp}
 
 super + w 
       $BROWSER
 
 super + d 
-      dmenu_run
+      rofi -show drun
       
 super + shift + d
       display
