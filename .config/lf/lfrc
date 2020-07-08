@@ -43,7 +43,7 @@ map xu extract
 map xt $tar czf $f.tar.gz $f
 map xz $zip -r $f.zip $f
 map . set hidden!
-map i &sxiv -ft `pwd` & disown
+map i &sxiv -ft `pwd`
 map m push $mkdir<space>
 map e $chmod +x $fx
 
@@ -51,8 +51,8 @@ map e $chmod +x $fx
 cmd open ${{
     case $(file --mime-type "$f" -bL) in
         text/*|application/json) $EDITOR "$f";;
-        video/*|image/*/application/pdf) xdg-open "$f" & disown;;
-        application/pdf) zathura "$f" & disown;;
+        video/*|image/*) xdg-open "$f";;
+        application/pdf) zathura "$f";;
         *) xdg-open "$f" ;;
     esac
 }}
@@ -66,14 +66,6 @@ cmd trash ${{
      read ans
      [ $ans = "y" ] && mv $fx ~/.trash
 }}
-
-# cmd delete ${{
-#      set -f
-#      printf "$fx\n"
-#      printf "Delete?[y/n]"
-#      read ans
-#      [ $ans = "y" ] && rm -rf $fx
-# }}
 
 cmd extract ${{
     set -f
