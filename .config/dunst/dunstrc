@@ -13,15 +13,15 @@
 [global]
     monitor = 0
     follow = mouse
-    geometry = "320x6-20+35"
+    geometry = "320x6-20+45"
     indicate_hidden = yes
     shrink = no
     notification_height = 15
     separator_height = 1
     padding = 10
     horizontal_padding = 10
-    frame_width = 4
-    frame_color = "#232323"
+    frame_width = 1
+    transparency = 30
     separator_color = frame
     sort = yes
     idle_threshold = 120
@@ -46,7 +46,7 @@
     always_run_script = true
     startup_notification = false
     verbosity = mesg
-    corner_radius = 8
+    corner_radius = 3
     force_xinerama = false
     mouse_left_click = do_action
     mouse_middle_click = close_all
@@ -79,12 +79,12 @@ separator_color = "#ffffff"
 
 [base16_low]
     msg_urgency = low
-    background = "#2a2a2a"
+    background = "#bb212121"
     foreground = "#ffffff"
 
 [base16_normal]
     msg_urgency = normal
-    background = "#2a2a2a"
+    background = "#bb212121"
     foreground = "#ffffff"
 
 [base16_critical]
