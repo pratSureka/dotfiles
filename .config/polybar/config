@@ -205,7 +205,8 @@ label-maxlen = 30
 [module/updates]
 type = custom/script
 exec = ~/.scripts/update.sh
-click-left = `$TERMINAL -e sudo pacman -Su`
+click-left = `dunstify -t 2000 -a "Update" "Checking Updates" && sudo pacman -Sy && update.sh`
+click-right = `$TERMINAL -e sudo pacman -Su`
 tail = true
 interval = 100
 
