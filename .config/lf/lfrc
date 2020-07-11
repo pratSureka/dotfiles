@@ -51,9 +51,9 @@ map e $chmod +x $fx
 cmd open ${{
     case $(file --mime-type "$f" -bL) in
         text/*|application/json) $EDITOR "$f";;
-        video/*|image/*) xdg-open "$f";;
-        application/pdf) zathura "$f";;
-        *) xdg-open "$f" ;;
+        video/*|image/*) nohup xdg-open "$f" >> /dev/null & ;;
+        application/pdf) nohup zathura "$f" >>/dev/null & ;;
+        *) nohup xdg-open "$f" >> /dev/null & ;;
     esac
 }}
 
