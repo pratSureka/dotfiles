@@ -11,11 +11,11 @@ super + shift + x
 
 # kill
 super + q
-	bspc node -k
+	bspc node -c
 
 # close
 super + shift + q
-	bspc node -c
+	bspc node -k
 
 #Edic configs
 super + c
@@ -38,6 +38,10 @@ super + g
 # set the window state
 super + f
 	bspc node -t fullscreen
+
+#Monitor Layout
+super + m
+    autorandr --change
 
 # set the node flags
 super + ctrl + {m,x,y,z}
@@ -125,7 +129,7 @@ super + w
       $BROWSER
 
 super + d 
-      rofi -show drun
+      rofi -modi drun -show drun -show-icons
       
 super + shift + d
       display
