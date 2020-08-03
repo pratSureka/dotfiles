@@ -38,7 +38,7 @@ map O $mimeopen --ask $f
 map r push :rename<space>
 map t trash
 map D delete $f
-map w
+map w &sxiv -ft ~/Pictures/Wallpapers
 map xu extract
 map xt $tar czf $f.tar.gz $f
 map xz $zip -r $f.zip $f
