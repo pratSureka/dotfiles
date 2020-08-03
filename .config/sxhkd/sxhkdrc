@@ -1,19 +1,21 @@
 super + Return
-      $TERM
-super + {i,r,m}
-      alacritty -e {bashtop,ranger,ncmpcpp}
+      $TERMINAL
+super + {i,r}
+      alacritty -e {bashtop,lf}
 super + w 
       firefox
 super + d 
-      dmenu_run -l 8 -b
+      rofi -modi drun -show drun -show-icons
 
 super + n
       sxiv -tf ~/Pictures/Wallpapers
 Print
       maim ~/Pictures/Screenshots/$(date '+%y%m%d').png ; dunstify --icon="~/Pictures/Screenshots/$(date '+%y%m%d').png" "Screenschot taken" ;;
 
-super + shift + x
-      power-dmenu
+#super + m
+#    autorandr --change
+#super + shift + x
+#      power-dmenu
 
 #Volume
 XF86Audio{RaiseVolume,LowerVolume,Mute}
