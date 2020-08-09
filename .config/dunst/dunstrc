@@ -21,11 +21,11 @@
     padding = 10
     horizontal_padding = 10
     frame_width = 1
-    transparency = 30
+    transparency = 0
     separator_color = frame
     sort = yes
     idle_threshold = 120
-    font = JetBrains Mono 12
+    font = SF Pro Display 12
     line_height = 0
     markup = full
     format = "<span><b>%s %p</b></span>\n%b"
@@ -75,19 +75,19 @@ appname = Transmission
 timeout = 0
 
 frame_color = "#ffffff"
-separator_color = "#ffffff"
+separator_color = "#abb2bf"
 
 [base16_low]
     msg_urgency = low
-    background = "#bb212121"
+    background = "#000000"
     foreground = "#ffffff"
 
 [base16_normal]
     msg_urgency = normal
-    background = "#bb212121"
+    background = "#000000"
     foreground = "#ffffff"
 
 [base16_critical]
     msg_urgency = critical
-    background = "#fe0100"
+    background = "#e06c75"
     foreground = "#000000"

@@ -5,9 +5,12 @@
 # restart bspwm
 super + shift + r
 	bspc wm -r
-#Clearine
+super + shift + z
+	systemctl reboot
 super + shift + x
-    clearine
+	systemctl poweroff
+super + x
+	bspc quit
 
 # kill
 super + q
@@ -41,7 +44,8 @@ super + f
 
 #Monitor Layout
 super + m
-    autorandr --change
+    discord
+    #autorandr --change
 
 # set the node flags
 super + ctrl + {m,x,y,z}

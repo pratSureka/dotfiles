@@ -313,7 +313,7 @@ scheme:
 # ayu
 # one
 # gruv
-colors: *one
+colors: *hyper
   # Indexed Colors
   #
   # The indexed colors include all colors from 16 to 256.

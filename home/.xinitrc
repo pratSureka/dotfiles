@@ -1,3 +1,5 @@
+# eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
+# export SSH_AUTH_SOCK
 #picom &
 #xset b off
 #unclutter &
@@ -9,8 +11,8 @@
 #xrdb ~/.Xresources
 #xinput set-prop Synaptics\ TM3096-006 "libinput Tapping Enabled" 1
 #blueman-applet &
-exec spectrwm
-# exec bspwm
+# exec spectrwm
+exec bspwm
 # sxhkd &
 # status &
 # xss-lock --quiet i3lock & 

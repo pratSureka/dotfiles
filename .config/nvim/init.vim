@@ -1,9 +1,9 @@
 set nocompatible
 
 if empty(glob('~/.local/share/nvim/site/autoload/plug.vim'))
-  silent !curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs
-    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+    silent !curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs
+                \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
 call plug#begin('~/.local/share/nvim/site/plugged')
@@ -25,10 +25,15 @@ Plug 'rbgrouleff/bclose.vim'
 Plug 'liuchengxu/vista.vim'
 Plug 'liuchengxu/vim-which-key'
 Plug 'mhinz/vim-startify'
-Plug 'jdsimcoe/hyper.vim'
-Plug 'rafi/awesome-vim-colorschemes'
 Plug 'airblade/vim-gitgutter'
 Plug 'sheerun/vim-polyglot'
+Plug 'vimwiki/vimwiki'
+Plug 'Chiel92/vim-autoformat'
+
+"Colors
+Plug 'rafi/awesome-vim-colorschemes'
+Plug 'jdsimcoe/hyper.vim'
+Plug 'sainnhe/sonokai'
 
 "vim-lsp
 Plug 'prabirshrestha/async.vim'
@@ -79,28 +84,38 @@ set undolevels=1000
 set undoreload=10000
 set undodir=~/.local/share/nvim
 set termguicolors
+" set textwidth=150
+" set colorcolumn=150
+" set formatoptions+=a
 
+"Colors
 "One
-colorscheme one
-set background=dark
-let g:one_allow_italics = 1
+" colorscheme one
+" set background=dark
+" let g:one_allow_italics = 1
 
 " Molokai
 " colorscheme molokai
 " let g:rehash256 = 1
 
+" Sonokai
+" colorscheme sonokai
+" let g:sonokai_style = 'andromeda'
+" let g:sonokai_enable_italic = 1
+
 " Hyper
-" colorscheme hyper
-" hi Visual  guifg=none guibg=#2a2a2a gui=none
-" hi CursorLine  guifg=none guibg=#2a2a2a gui=none
+colorscheme hyper
+hi Visual  guifg=none guibg=#2a2a2a gui=none
+hi CursorLine  guifg=none guibg=#2a2a2a gui=none
 
 autocmd CompleteDone * pclose
 au VimLeave * set guicursor=a:ver1-blinkon1
+" au BufWrite * :Autoformat
 
 "--Key-Bindings--"
 
 map <silent><leader>w :w<CR>
-map <silent><leader>q :q<CR> 
+map <silent><leader>q :q<CR>
 map <silent><leader>wq :wq<CR>
 map <silent><leader>, :tabn<CR>
 map <silent><leader>. :tabN<CR>
@@ -131,7 +146,7 @@ let g:indentLine_enabled = 1
 set noshowmode
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 0
-" let g:airline_theme='onedark'
+let g:airline_theme='sonokai'
 
 "Completor
 " let g:completor_python_binary = '/usr/lib/python3.8/'
@@ -186,9 +201,9 @@ nnoremap <silent><leader>ch :LspHover<CR>
 
 "Vim-lsp-settings
 let g:lsp_settings = {
-\  'clangd': {'cmd': ['clangd']},
-\  'efm-langserver': {'disabled': v:false}
-\}
+            \  'clangd': {'cmd': ['clangd']},
+            \  'efm-langserver': {'disabled': v:false}
+            \}
 
 "Deoplete
 let g:deoplete#enable_at_startup = 1
