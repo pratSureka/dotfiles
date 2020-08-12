@@ -46,4 +46,4 @@ xinput set-prop Synaptics\ TM3096-006 "libinput Tapping Enabled" 1
 # red &
 # dunst &
 xrdb ~/.Xresources
-xob_init
+# bspwm_monitor_switch
