@@ -126,8 +126,8 @@ super + {Left,Down,Up,Right}
 super + Return
       $TERMINAL
 
-super + {i,r,m}
-      $TERMINAL -e {bashtop,lf,ncmpcpp}
+super + {i,r}
+      $TERMINAL -e {top,lf}
 
 super + w 
       $BROWSER
