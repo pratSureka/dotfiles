@@ -31,9 +31,10 @@ Plug 'vimwiki/vimwiki'
 Plug 'Chiel92/vim-autoformat'
 
 "Colors
-Plug 'rafi/awesome-vim-colorschemes'
+Plug 'sonph/onehalf', {'rtp': 'vim/'}
+Plug 'ghifarit53/tokyonight-vim'
 Plug 'jdsimcoe/hyper.vim'
-Plug 'sainnhe/sonokai'
+Plug 'kaicataldo/material.vim', { 'branch': 'main' }
 
 "vim-lsp
 Plug 'prabirshrestha/async.vim'
@@ -88,29 +89,35 @@ set termguicolors
 " set colorcolumn=150
 " set formatoptions+=a
 
-"Colors
-"One
-" colorscheme one
-" set background=dark
-" let g:one_allow_italics = 1
-
-" Molokai
-" colorscheme molokai
-" let g:rehash256 = 1
-
-" Sonokai
-" colorscheme sonokai
-" let g:sonokai_style = 'andromeda'
-" let g:sonokai_enable_italic = 1
-
-" Hyper
-colorscheme hyper
-hi Visual  guifg=none guibg=#2a2a2a gui=none
-hi CursorLine  guifg=none guibg=#2a2a2a gui=none
-
 autocmd CompleteDone * pclose
 au VimLeave * set guicursor=a:ver1-blinkon1
 " au BufWrite * :Autoformat
+
+"Colors
+
+" Hyper
+" colorscheme hyper
+" hi Visual  guifg=none guibg=#2a2a2a gui=none
+" hi CursorLine  guifg=none guibg=#2a2a2a gui=none
+
+" Onehalf
+" colorscheme onehalfdark
+
+" Material
+" let g:material_terminal_italics = 1
+" " 'default' | 'palenight' | 'ocean' | 'lighter' | 'darker' | 'default-community' | 'palenight-community' | 'ocean-community' | 'lighter-community' | 'darker-community'
+" let g:material_theme_style = 'ocean'
+" colorscheme material
+
+" Tokyonight
+let g:tokyonight_style = 'night' " available: night, storm
+let g:tokyonight_enable_italic = 1
+let g:tokyonight_transparent_background = 1
+let g:tokyonight_menu_selection_background = 'green' " 'green', 'red', 'blue'
+let g:tokyonight_cursor = 'auto' " 'auto', 'red', 'green', 'blue'
+let g:tokyonight_current_word = 'bold' " 'bold', 'underline', 'italic', 'grey background'
+
+colorscheme tokyonight
 
 "--Key-Bindings--"
 
@@ -138,7 +145,7 @@ let g:rainbow#pairs = [['(', ')'], ['[', ']'], ['{', '}']]
 autocmd FileType * RainbowParentheses
 
 "Indentline
-"let g:indentLine_setColors = 0
+let g:indentLine_setColors = 1
 let g:indentLine_char_list = ['|', '¦', '┆', '┊']
 let g:indentLine_enabled = 1
 
@@ -146,14 +153,7 @@ let g:indentLine_enabled = 1
 set noshowmode
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 0
-let g:airline_theme='sonokai'
-
-"Completor
-" let g:completor_python_binary = '/usr/lib/python3.8/'
-" let g:completor_clang_binary = '/usr/bin/clang'
-" inoremap <expr> <M-Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
-" inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
-" inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<cr>"
+let g:airline_theme='tokyonight'
 
 "Ultisnips
 let g:UltiSnipsExpandTrigger="<tab>"
@@ -210,7 +210,3 @@ let g:deoplete#enable_at_startup = 1
 inoremap <expr> <M-j> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <M-k> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 inoremap <expr> <tab> pumvisible() ? "\<C-y>" : "\<cr>"
-
-"Onedark
-let g:onedark_termcolors = 256
-let g:onedark_terminal_italics = 1
