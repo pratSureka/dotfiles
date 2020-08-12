@@ -1,5 +1,6 @@
 [bar/example]
-monitor = 
+; monitor = ${env:MONITOR:}
+; monitor = 
 ;include-file = ~/.config/polybar/fullbar
 
 ; background = #bb212121
@@ -7,7 +8,7 @@ background = #000000
 foreground = #eeffff
 modules-left = bspwm title 
 modules-center =
-modules-right = memory separator cpu separator updates separator pulseaudio separator wlan separator eth separator battery separator date
+modules-right = memory separator cpu separator backlight separator pulseaudio separator wlan separator eth separator battery separator date
 width                    = 100%
 height                   = 20
 radius                   = 0
@@ -101,10 +102,24 @@ label-connected = %essid%
 
 format-disconnected = <label-disconnected>
 label-disconnected ="睊"
-; format-disconnected-prefix = 
-; label-disconnected-foreground = ${colors.foreground-alt}
 
 ramp-signal-0 = 
+
+[module/backlight]
+type = internal/backlight
+
+card = intel_backlight
+
+enable-scroll = true
+
+format = <ramp> <label>
+
+label = %percentage%%
+
+ramp-0 = 
+ramp-1 = 
+ramp-2 = 
+ramp-3 = 
 
 [module/pulseaudio]
 type = internal/pulseaudio
@@ -158,7 +173,7 @@ ws-icon-8 = 
 ws-icon-default = 
 
 format = <label-state>
-label-active = %index%
+label-focused = %index%
 label-occupied = %index%
 label-urgent = %index%
 label-empty = %index%
@@ -166,14 +181,14 @@ label-empty = %index%
 label-occupied-padding = 2
 label-empty-padding = 2
 label-urgent-padding = 4
-label-active-padding = 4
+label-focused-padding = 4
 
-label-active-background = "#ffffff"
+label-focused-background = "#ffffff"
 label-urgent-background = "#e06c75"
 
-label-active-foreground = "#000000"
+label-focused-foreground = "#000000"
 label-urgent-foreground = "#000000"
-; label-active-foreground = "#212121"
+; label-focused-foreground = "#212121"
 ; label-urgent-foreground = "#212121"
 label-empty-foreground = "#ffffff"
 label-occupied-foreground = "#808080"
@@ -216,13 +231,13 @@ format = <label>
 label =   %title%
 label-maxlen = 30
 
-[module/updates]
-type = custom/script
-exec = ~/.scripts/update.sh
-click-left = `dunstify -t 2000 -a "Update" "Checking Updates" && sudo pacman -Sy && update.sh`
-click-right = `$TERMINAL -e sudo pacman -Su &`
-tail = true
-interval = 100
+; [module/updates]
+; type = custom/script
+; exec = ~/.scripts/update.sh
+; click-left = `dunstify -t 2000 -a "Update" "Checking Updates" && sudo pacman -Sy && update.sh`
+; click-right = `$TERMINAL -e sudo pacman -Su &`
+; tail = true
+; interval = 100
 
 [module/separator]
 type = custom/text
