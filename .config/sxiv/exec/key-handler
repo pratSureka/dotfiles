@@ -13,6 +13,7 @@ do
       rm -rf "$file" ;;
     "l")
       betterlockscreen -u $file -r 1366x768 -b 0.5
+      betterlockscreen -u $file -r 1920x1080 -b 0.5
       dunstify --icon="$file" "Lockscreen set" ;;
     esac
 done
