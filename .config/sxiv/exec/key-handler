@@ -5,15 +5,14 @@ do
     "w")
       feh --bg-fill "$file" 
       cp "$file" ~/.config/wall.png 
-      dunstify --icon="$file" "Wallpaper set" ;;
-    "n")
-      cp "$file" ~/.config/neofetch.png 
-      dunstify --icon="$file" "Neofetch Image Updated" ;;
+      # notify-send --icon="$file" "Wallpaper set" ;;
+      notify-send "Wallpaper set" ;;
     "d")
       rm -rf "$file" ;;
     "l")
       betterlockscreen -u $file -r 1366x768 -b 0.5
       betterlockscreen -u $file -r 1920x1080 -b 0.5
-      dunstify --icon="$file" "Lockscreen set" ;;
+      # dunstify --icon="$file" "Lockscreen set" ;;
+      dunstify "Lockscreen set" ;;
     esac
 done

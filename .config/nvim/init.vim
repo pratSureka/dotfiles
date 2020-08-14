@@ -29,6 +29,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'sheerun/vim-polyglot'
 Plug 'vimwiki/vimwiki'
 Plug 'Chiel92/vim-autoformat'
+Plug 'tpope/vim-fugitive'
 
 "Colors
 Plug 'sonph/onehalf', {'rtp': 'vim/'}
@@ -126,6 +127,8 @@ map <silent><leader>q :q<CR>
 map <silent><leader>wq :wq<CR>
 map <silent><leader>, :tabn<CR>
 map <silent><leader>. :tabN<CR>
+map <silent><Leader>s :Startify<CR>
+map <silent><Leader>a :Autoformat<CR>
 
 "--Plugin-Config--"
 "
@@ -145,7 +148,7 @@ let g:rainbow#pairs = [['(', ')'], ['[', ']'], ['{', '}']]
 autocmd FileType * RainbowParentheses
 
 "Indentline
-let g:indentLine_setColors = 1
+let g:indentLine_setColors = 0
 let g:indentLine_char_list = ['|', '¦', '┆', '┊']
 let g:indentLine_enabled = 1
 
@@ -168,10 +171,10 @@ omap / <Plug>(easymotion-tn)
 map  n <Plug>(easymotion-next)
 map  N <Plug>(easymotion-prev)
 
-map <Leader>l <Plug>(easymotion-lineforward)
-map <Leader>j <Plug>(easymotion-j)
-map <Leader>k <Plug>(easymotion-k)
-map <Leader>h <Plug>(easymotion-linebackward)
+" map <Leader><Leader>j <Plug>(easymotion-j)
+" map <Leader>k <Plug>(easymotion-k)
+map <Leader><Leader>l <Plug>(easymotion-lineforward)
+map <Leader><Leader>h <Plug>(easymotion-linebackward)
 
 "Vista
 map <silent><Leader>vt :Vista!!<CR>
