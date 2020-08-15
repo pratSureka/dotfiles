@@ -2,6 +2,8 @@
 
 picom &
 xset b off
+killall redshift
+redshift &
 unclutter &
 nm-applet &
 low_battery &

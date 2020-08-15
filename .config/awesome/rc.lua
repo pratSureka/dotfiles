@@ -65,18 +65,18 @@ modkey = "Mod4"
 -- Table of layouts to cover with awful.layout.inc, order matters.
 awful.layout.layouts = {
     awful.layout.suit.tile,
-    awful.layout.suit.floating,
-    awful.layout.suit.tile.left,
-    awful.layout.suit.tile.bottom,
-    awful.layout.suit.tile.top,
-    awful.layout.suit.fair,
-    awful.layout.suit.fair.horizontal,
+    -- awful.layout.suit.floating,
+    -- awful.layout.suit.tile.left,
+    -- awful.layout.suit.tile.bottom,
+    -- awful.layout.suit.tile.top,
+    -- awful.layout.suit.fair,
+    -- awful.layout.suit.fair.horizontal,
     awful.layout.suit.spiral,
     awful.layout.suit.spiral.dwindle,
-    awful.layout.suit.max,
-    awful.layout.suit.max.fullscreen,
-    awful.layout.suit.magnifier,
-    awful.layout.suit.corner.nw,
+    -- awful.layout.suit.max,
+    -- awful.layout.suit.max.fullscreen,
+    -- awful.layout.suit.magnifier,
+    -- awful.layout.suit.corner.nw,
     -- awful.layout.suit.corner.ne,
     -- awful.layout.suit.corner.sw,
     -- awful.layout.suit.corner.se,
@@ -109,6 +109,7 @@ menubar.utils.terminal = terminal -- Set the terminal for applications that requ
 -- Create a textclock widget
 mytextclock = wibox.widget {
     format = "%a %d %b %l:%M %p" ,
+    align = "center",
     widget = wibox.widget.textclock,
 }
 
@@ -172,7 +173,7 @@ local tasklist_buttons = gears.table.join(
         set_wallpaper(s)
 
         -- Each screen has its own tag table.
-        awful.tag({ "1", "2", "3", "4", "5", "6", "7", "8", "9" }, s, awful.layout.layouts[1])
+        awful.tag({ "", "", "", "", "", "", "", "", "" }, s, awful.layout.layouts[1])
 
         -- Create a promptbox for each screen
         s.mypromptbox = awful.widget.prompt()
@@ -228,12 +229,13 @@ local tasklist_buttons = gears.table.join(
                     s.mytaglist,
                     s.mypromptbox,
                 },
-                s.mytasklist, -- Middle widget
+                -- s.mytasklist, -- Middle widget
+                mytextclock,
                 { -- Right widgets
                     seperator,
                     awful.widget.watch('battery', 15),
                     seperator,
-                    mytextclock,
+                    -- mytextclock,
                     layout = wibox.layout.fixed.horizontal,
                     wibox.widget.systray(),
                 },
@@ -316,8 +318,8 @@ local tasklist_buttons = gears.table.join(
             {description = "Rofi", group = "launcher"}),
             awful.key({ modkey,           }, "i", function () awful.spawn(bashtop) end,
             {description = "Bashtop", group = "launcher"}),
-            awful.key({ modkey,           }, "m", function () awful.spawn("discord") end,
-            {description = "Discord", group = "launcher"}),
+            -- awful.key({ modkey,           }, "m", function () awful.spawn("discord") end,
+            -- {description = "Discord", group = "launcher"}),
             awful.key({ modkey,           }, "r", function () awful.spawn(lf) end,
             {description = "Lf", group = "launcher"}),
             awful.key({ modkey,           }, "n", function () awful.spawn.with_shell(sxiv) end,
@@ -371,7 +373,7 @@ local tasklist_buttons = gears.table.join(
             {description = "toggle fullscreen", group = "client"}),
             awful.key({ modkey,           }, "q",      function (c) c:kill()                         end,
             {description = "close", group = "client"}),
-            awful.key({ modkey, "Shift"   }, "space",  awful.client.floating.toggle                     ,
+            awful.key({ modkey,    }, "a",  awful.client.floating.toggle                     ,
             {description = "toggle floating", group = "client"}),
             awful.key({ modkey, "Control" }, "Return", function (c) c:swap(awful.client.getmaster()) end,
             {description = "move to master", group = "client"}),
@@ -493,6 +495,12 @@ local tasklist_buttons = gears.table.join(
             }
             },
 
+            { rule = { class = "firefox", type = normal },
+              properties = { screen = 1, tag = "web", floating=false, tile = true } },
+            -- }
+            { rule = { class = "discord" },
+              properties = { screen = 1, tag = "social" } },
+            -- }
             -- Floating clients.
             { rule_any = {
             instance = {
@@ -501,13 +509,10 @@ local tasklist_buttons = gears.table.join(
             "pinentry",
             },
             class = {
-            "Arandr",
-            "Blueman-manager",
             "Gpick",
             "Kruler",
             "MessageWin",  -- kalarm.
-            "Sxiv",
-            "Tor Browser", -- Needs a fixed window size to avoid fingerprinting by screen size.
+            -- "Sxiv",
             "Wpa_gui",
             "veromix",
             "xtightvncviewer"},
@@ -522,17 +527,15 @@ local tasklist_buttons = gears.table.join(
             "ConfigManager",  -- Thunderbird's about:config.
             "pop-up",       -- e.g. Google Chrome's (detached) Developer Tools.
             }
-            }, properties = { floating = true }},
+            }, properties = { floating = true, placement = awful.placement.centered }},
 
             -- Add titlebars to normal clients and dialogs
             { rule_any = {type = { "normal", "dialog" }
             }, properties = { titlebars_enabled = false }
             },
 
-            -- Set Firefox to always map on the tag named "2" on screen 1.
-            -- { rule = { class = "Firefox" },
-            --   properties = { screen = 1, tag = "2" } },
             }
+            -- Set Firefox to always map on the tag named "2" on screen 1.
             -- }}}
 
             -- {{{ Signals
