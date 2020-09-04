@@ -2,7 +2,7 @@
 add_newline = false
 
 [line_break]
-disabled = true
+disabled = false
 
 [python]
 disabled = true
@@ -27,3 +27,75 @@ disabled = true
 
 [aws]
 disabled = true
+
+[battery]
+disabled = true
+
+[dotnet]
+disabled = true
+
+[conda]
+disabled = true
+
+[crystal]
+disabled = true
+
+[elixir]
+disabled = true
+
+[elm]
+disabled = true
+
+[env_var]
+disabled = true
+
+[julia]
+disabled = true
+
+[memory_usage]
+disabled = true
+
+[nix_shell]
+disabled = true
+
+[nim]
+disabled = true
+
+[jobs]
+disabled = true
+
+[erlang]
+disabled = true
+
+[git_branch]
+symbol = " "
+
+[git_commit]
+commit_hash_length = 4
+
+[character]
+symbol = ""
+vicmd_symbol = ""
+error_symbol = "✗"
+use_symbol_for_status = true
+
+[cmd_duration]
+min_time = 500
+prefix = "took "
+
+[docker_context]
+symbol = " "
+
+[hostname]
+ssh_only = false
+prefix = "⟪"
+suffix = "⟫"
+trim_at = ".companyname.com"
+style = "bold dimmed green"
+disabled = false
+
+[username]
+style_root = "bold red"
+style_user = "bold red"
+show_always = true
+disabled = false

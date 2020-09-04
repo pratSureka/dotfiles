@@ -7,12 +7,12 @@ configuration {
 
 * {
     background-color:               transparent;
-    background:                     #2E344090;
-    background-alt:                 #E5E9F090;
-    text-color:                     #D8DEE9;
-    selected-text-color:            #000000;
+    background:                     #1a1b26;
+    background-alt:                 #E5E9F0;
+    text-color:                     #a9b1d6;
+    selected-text-color:            #32344a;
     primary:                        #A3BE8C;
-    urgent:                         #BF616A;
+    urgent:                         #ff7a93;
 }
 
 window {

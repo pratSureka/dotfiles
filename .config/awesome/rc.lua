@@ -43,18 +43,25 @@ end
 -- }}}
 
 -- {{{ Variable definitions
--- Themes define colours, icons, font and wallpapers.
-beautiful.init("/home/prat/.config/awesome/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
-terminal = "alacritty"
+terminal = os.getenv("TERMINAL") or "xterm"
 bashtop = string.format("%s -e bashtop", terminal)
 lf = string.format("%s -e lf", terminal)
 rofi = "rofi -modi drun -show drun -show-icons"
 sxiv = "sxiv -ft ~/Pictures/Wallpapers"
 editor = os.getenv("EDITOR") or "nano"
+browser = os.getenv("BROWSER") or "nano"
 editor_cmd = terminal .. " -e " .. editor
 
+local themes = {
+    "one",       -- 1
+    "gruvbox",   -- 2
+}
+
+local chosen_theme = themes[2]
+-- Themes define colours, icons, font and wallpapers.
+beautiful.init(string.format("%s/.config/awesome/themes/%s/theme.lua", os.getenv("HOME"), chosen_theme)) --"/home/prat/.config/awesome/theme.lua")
 -- Default modkey.
 -- Usually, Mod4 is the key with a logo between Control and Alt.
 -- If you do not like this or do not have such a key,
@@ -65,14 +72,14 @@ modkey = "Mod4"
 -- Table of layouts to cover with awful.layout.inc, order matters.
 awful.layout.layouts = {
     awful.layout.suit.tile,
+    awful.layout.suit.spiral,
     -- awful.layout.suit.floating,
     -- awful.layout.suit.tile.left,
     -- awful.layout.suit.tile.bottom,
     -- awful.layout.suit.tile.top,
     -- awful.layout.suit.fair,
     -- awful.layout.suit.fair.horizontal,
-    awful.layout.suit.spiral,
-    awful.layout.suit.spiral.dwindle,
+    -- awful.layout.suit.spiral.dwindle,
     -- awful.layout.suit.max,
     -- awful.layout.suit.max.fullscreen,
     -- awful.layout.suit.magnifier,
@@ -108,7 +115,7 @@ menubar.utils.terminal = terminal -- Set the terminal for applications that requ
 -- {{{ Wibar
 -- Create a textclock widget
 mytextclock = wibox.widget {
-    format = "%a %d %b %l:%M %p" ,
+    format = " %a %d %b    %l:%M %p" ,
     align = "center",
     widget = wibox.widget.textclock,
 }
@@ -217,7 +224,7 @@ local tasklist_buttons = gears.table.join(
             }
 
             -- Create the wibox
-            s.mywibox = awful.wibar({ position = "top", screen = s })
+            s.mywibox = awful.wibar({ position = "top", screen = s, opacity = 0.75, border_width = 0, border_color = beautiful.border_focus })
 
             -- Add widgets to the wibox
             s.mywibox:setup {
@@ -225,13 +232,17 @@ local tasklist_buttons = gears.table.join(
                 { -- Left widgets
                     layout = wibox.layout.fixed.horizontal,
                     -- mylauncher,
-                    s.mylayoutbox,
+                    -- s.mylayoutbox,
                     s.mytaglist,
                     s.mypromptbox,
                 },
                 -- s.mytasklist, -- Middle widget
                 mytextclock,
                 { -- Right widgets
+                    seperator,
+                    awful.widget.watch('volume', 15),
+                    seperator,
+                    awful.widget.watch('brightness', 15),
                     seperator,
                     awful.widget.watch('battery', 15),
                     seperator,
@@ -318,14 +329,16 @@ local tasklist_buttons = gears.table.join(
             {description = "Rofi", group = "launcher"}),
             awful.key({ modkey,           }, "i", function () awful.spawn(bashtop) end,
             {description = "Bashtop", group = "launcher"}),
-            -- awful.key({ modkey,           }, "m", function () awful.spawn("discord") end,
-            -- {description = "Discord", group = "launcher"}),
+            awful.key({ modkey,           }, "m", function () awful.spawn("discord") end,
+            {description = "Discord", group = "launcher"}),
             awful.key({ modkey,           }, "r", function () awful.spawn(lf) end,
             {description = "Lf", group = "launcher"}),
             awful.key({ modkey,           }, "n", function () awful.spawn.with_shell(sxiv) end,
             {description = "Sxiv", group = "launcher"}),
-            awful.key({ modkey,           }, "w", function () awful.spawn("firefox") end,
-                {description = "Firefox", group = "launcher"}),
+            awful.key({ modkey,           }, "w", function () awful.spawn(browser) end,
+                {description = "Brave", group = "launcher"}),
+            awful.key({ modkey,  "Shift"  }, "s", function ()  awful.spawn.with_shell("screenshot") end,
+                {description="show help", group="awesome"}),
 
             awful.key({ modkey,           }, "l",     function () awful.tag.incmwfact( 0.05)          end,
             {description = "increase master width factor", group = "layout"}),
@@ -359,6 +372,8 @@ local tasklist_buttons = gears.table.join(
             -- Prompt
             awful.key({ modkey }, "x", function () awful.spawn.with_shell("systemctl poweroff") end,
             {description = "Shutdown", group = "awesome"}),
+            awful.key({ modkey }, "z", function () awful.spawn.with_shell("systemctl reboot") end,
+            {description = "Reboot", group = "awesome"}),
             -- Menubar
             awful.key({ modkey }, "p", function() menubar.show() end,
             {description = "show the menubar", group = "launcher"})
@@ -387,12 +402,12 @@ local tasklist_buttons = gears.table.join(
             -- minimized, since minimized clients can't have the focus.
             c.minimized = true
             end ,
-            {description = "minimize", group = "client"}),
-            awful.key({ modkey,           }, "m",
-            function (c)
-            c.maximized = not c.maximized
-            c:raise()
-            end ,
+            -- {description = "minimize", group = "client"}),
+            -- awful.key({ modkey,           }, "m",
+            -- function (c)
+            -- c.maximized = not c.maximized
+            -- c:raise()
+            -- end ,
             {description = "(un)maximize", group = "client"}),
             awful.key({ modkey, "Control" }, "m",
             function (c)
@@ -478,6 +493,23 @@ local tasklist_buttons = gears.table.join(
 
             -- {{{ Autorun programs
             awful.spawn.with_shell("~/.config/awesome/autostart.sh")
+            -- autorunApps =
+            -- {
+            --    'picom --experimental-backends',
+            --    'xset b off',
+            --    'redshift &',
+            --    'unclutter &',
+            --    'nm-applet &',
+            --    'setxkbmap -option caps:swapescape',
+            --    'xrdb ~/.Xresources',
+            --    "xinput set-prop Synaptics TM3096-006 'libinput Tapping Enabled' 1",
+            --    'blueman-applet &',
+            -- }
+            -- if autorun then
+            --    for app = 1, #autorunApps do
+            --        awful.spawn.with_shell("~/.config/awesome/autostart.sh ")
+            --    end
+            -- end
             -- }}}
             -- {{{ Rules
             -- Rules to apply to new clients (through the "manage" signal).
@@ -495,11 +527,6 @@ local tasklist_buttons = gears.table.join(
             }
             },
 
-            { rule = { class = "firefox", type = normal },
-              properties = { screen = 1, tag = "web", floating=false, tile = true } },
-            -- }
-            { rule = { class = "discord" },
-              properties = { screen = 1, tag = "social" } },
             -- }
             -- Floating clients.
             { rule_any = {
@@ -514,6 +541,8 @@ local tasklist_buttons = gears.table.join(
             "MessageWin",  -- kalarm.
             -- "Sxiv",
             "Wpa_gui",
+            "Firefox",
+            "Brave-browser",
             "veromix",
             "xtightvncviewer"},
 
@@ -526,6 +555,8 @@ local tasklist_buttons = gears.table.join(
             "AlarmWindow",  -- Thunderbird's calendar.
             "ConfigManager",  -- Thunderbird's about:config.
             "pop-up",       -- e.g. Google Chrome's (detached) Developer Tools.
+            "Dialog",
+            "app",
             }
             }, properties = { floating = true, placement = awful.placement.centered }},
 
@@ -534,6 +565,17 @@ local tasklist_buttons = gears.table.join(
             }, properties = { titlebars_enabled = false }
             },
 
+            { rule = { class = "Firefox", type = normal },
+              properties = { screen = 1, tag = "", floating=false, tile = true } },
+
+            { rule = { class = "microsoft teams - preview", type = normal },
+              properties = { screen = 1, tag = "", floating=false, tile = true, ontop = false, above = false, maximized = false } },
+
+            { rule = { class = "Brave-browser", type = normal },
+              properties = { screen = 1, tag = "", floating=false, tile = true, ontop = false, above = false, maximized = false } },
+            -- }
+            { rule = { class = "discord" },
+              properties = { screen = 1, tag = "" } },
             }
             -- Set Firefox to always map on the tag named "2" on screen 1.
             -- }}}

@@ -32,10 +32,8 @@ Plug 'Chiel92/vim-autoformat'
 Plug 'tpope/vim-fugitive'
 
 "Colors
-Plug 'sonph/onehalf', {'rtp': 'vim/'}
 Plug 'ghifarit53/tokyonight-vim'
-Plug 'jdsimcoe/hyper.vim'
-Plug 'kaicataldo/material.vim', { 'branch': 'main' }
+Plug 'morhetz/gruvbox'
 
 "vim-lsp
 Plug 'prabirshrestha/async.vim'
@@ -95,20 +93,11 @@ au VimLeave * set guicursor=a:ver1-blinkon1
 " au BufWrite * :Autoformat
 
 "Colors
-
-" Hyper
-" colorscheme hyper
-" hi Visual  guifg=none guibg=#2a2a2a gui=none
-" hi CursorLine  guifg=none guibg=#2a2a2a gui=none
-
-" Onehalf
-" colorscheme onehalfdark
-
-" Material
-" let g:material_terminal_italics = 1
-" " 'default' | 'palenight' | 'ocean' | 'lighter' | 'darker' | 'default-community' | 'palenight-community' | 'ocean-community' | 'lighter-community' | 'darker-community'
-" let g:material_theme_style = 'ocean'
-" colorscheme material
+"Gruvbox
+let g:gruvbox_italic = 1
+let g:gruvbox_bold = 1
+let g:gruvbox_underline = 1
+let g:gruvbox_contrast_dark = 'hard'
 
 " Tokyonight
 let g:tokyonight_style = 'night' " available: night, storm
@@ -118,13 +107,22 @@ let g:tokyonight_menu_selection_background = 'green' " 'green', 'red', 'blue'
 let g:tokyonight_cursor = 'auto' " 'auto', 'red', 'green', 'blue'
 let g:tokyonight_current_word = 'bold' " 'bold', 'underline', 'italic', 'grey background'
 
-colorscheme tokyonight
+" colorscheme tokyonight
+colorscheme gruvbox
+
+"Vim-Airline
+set noshowmode
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 0
+let g:airline_theme='gruvbox'
+let g:airline_symbols_ascii = 1
 
 "--Key-Bindings--"
 
 map <silent><leader>w :w<CR>
 map <silent><leader>q :q<CR>
 map <silent><leader>wq :wq<CR>
+map <silent><leader>; :
 map <silent><leader>, :tabn<CR>
 map <silent><leader>. :tabN<CR>
 map <silent><Leader>s :Startify<CR>
@@ -152,11 +150,7 @@ let g:indentLine_setColors = 0
 let g:indentLine_char_list = ['|', '¦', '┆', '┊']
 let g:indentLine_enabled = 1
 
-"Vim-Airline
-set noshowmode
-let g:airline#extensions#tabline#enabled = 1
-let g:airline_powerline_fonts = 0
-let g:airline_theme='tokyonight'
+
 
 "Ultisnips
 let g:UltiSnipsExpandTrigger="<tab>"

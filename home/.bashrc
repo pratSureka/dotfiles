@@ -12,3 +12,4 @@ set -o vi
 
 source ~/.env
 source ~/.alias
+eval "$(starship init bash)"

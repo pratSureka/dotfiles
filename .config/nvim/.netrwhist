@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =8
+let g:netrw_dirhistcnt =9
+let g:netrw_dirhist_9='/home/prat/.config/awesome'
 let g:netrw_dirhist_8='/home/prat/.scripts'
 let g:netrw_dirhist_7='/home/prat/Git Repos/dotfiles/.config/bspwm'
 let g:netrw_dirhist_6='/home/prat/.scripts'
@@ -9,4 +10,3 @@ let g:netrw_dirhist_3='/home/prat/.scripts'
 let g:netrw_dirhist_2='/home/prat/.config/spectrwm'
 let g:netrw_dirhist_1='/home/prat/.config/alacritty'
 let g:netrw_dirhist_0='/home/prat/.config/spectrwm'
-let g:netrw_dirhist_9='/home/prat/.config/qtile'
