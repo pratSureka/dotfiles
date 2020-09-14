@@ -1,11 +1,19 @@
 alias yt='youtube-dl'
 alias ytv='youtube-dl --write-description --write-info-json --write-annotations --write-sub --write-thumbnail'
 alias yta='youtube-dl -x'
-alias i='sudo pacman -S'
-alias s='pacman -Ss'
-alias pkg='sudo pacman -Qe'
-alias remove='sudo pacman -Rns'
-alias up='sudo pacman -Syyu'
 alias c='clear'
 alias e='exit'
 alias ls='ls --color'
+
+#Ubuntu
+alias i='sudo apt install'
+alias s='apt search'
+alias up='sudo apt update'
+alias upg='sudo apt upgrade'
+
+#Arch
+#alias i='sudo pacman -S'
+#alias s='pacman -Ss'
+#alias pkg='sudo pacman -Qe'
+#alias remove='sudo pacman -Rns'
+#alias up='sudo pacman -Syyu'
